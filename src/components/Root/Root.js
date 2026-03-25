@@ -1,5 +1,4 @@
 import { Routes, Route, Navigate, Outlet } from "react-router-dom";
-import NavigationBar from "../NavigationBar/NavigationBar";
 import SubjectMap from "../SubjectNetwork/SubjectMap";
 import SubjectPage from "../SubjectPage/SubjectPage";
 import "./Root.css";
