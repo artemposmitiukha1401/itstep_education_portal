@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+
+.subject-map {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #080c18;
+}
+
+.stars-canvas {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.map-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  padding: 24px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  pointer-events: none;
+}
+
+.map-title {
+  margin: 0;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.92);
+  letter-spacing: 0.08em;
+}
+
+.map-tagline {
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.45);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.net-canvas {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  cursor: grab;
+  display: block;
+}
+
+.net-canvas:active {
+  cursor: grabbing;
+}
+
+.results-link {
+  position: absolute;
+  bottom: 28px;
+  right: 32px;
+  z-index: 10;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  padding: 8px 20px;
+  border: 1px solid white;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(8px);
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.results-link:hover {
+  color: #080c18;
+  border-color: rgba(255, 255, 255, 0.35);
+  background: white;
+}
