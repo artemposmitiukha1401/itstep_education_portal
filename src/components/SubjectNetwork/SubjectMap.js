@@ -41,11 +41,11 @@ const SUBJECTS = [
     pulse: Math.random() * Math.PI * 2,
   },
   {
-    id: 5,
+    id: 4,
     name: "Англійська мова",
     img: "english.jpg",
     topics: 4,
-    href: "/subject/5",
+    href: "/subject/4",
     cardColor: "#00695C",
     accentColor: "#2ec4b6",
     lightColor: "#d6f5f2",
@@ -401,13 +401,17 @@ export default function SubjectMap() {
     ctx.fillText(pillText, n.x, pillY);
     ctx.restore();
   }, []);
-
   const getNodeAt = useCallback((x, y) => {
+    const canvas = netRef.current;
+    if (!canvas) return null;
+    const rect = canvas.getBoundingClientRect();
+    const cx = x - rect.left;
+    const cy = y - rect.top;
     const { nodes } = stateRef.current;
     for (let i = nodes.length - 1; i >= 0; i--) {
       const n = nodes[i];
-      const dx = x - n.x;
-      const dy = y - n.y;
+      const dx = cx - n.x;
+      const dy = cy - n.y;
       if (dx * dx + dy * dy < (RADIUS + 12) ** 2) return n;
     }
     return null;
