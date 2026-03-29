@@ -13,6 +13,11 @@ export default [
         ecmaVersion: "latest",
         sourceType: "module",
       },
+      globals: {
+        document: "readonly",
+        window: "readonly",
+        console: "readonly",
+      },
     },
     rules: {
       ...react.configs.recommended.rules,

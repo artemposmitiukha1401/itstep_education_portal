@@ -1,0 +1,112 @@
+{
+  "topics": [
+    {
+      "id": 1,
+      "title": "Algebra",
+      "subtopics": [
+        {
+          "id": 1,
+          "title": "Linear Equations",
+          "text": "",
+          "images": [],
+          "tests": []
+        },
+        {
+          "id": 2,
+          "title": "Quadratic Equations",
+          "text": "",
+          "images": [],
+          "tests": []
+        },
+        {
+          "id": 3,
+          "title": "Inequalities",
+          "text": "",
+          "images": [],
+          "tests": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Geometry",
+      "subtopics": [
+        {
+          "id": 1,
+          "title": "Triangles",
+          "text": "",
+          "images": [],
+          "tests": []
+        },
+        {
+          "id": 2,
+          "title": "Circles",
+          "text": "",
+          "images": [],
+          "tests": []
+        },
+        {
+          "id": 3,
+          "title": "Polygons",
+          "text": "",
+          "images": [],
+          "tests": []
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Calculus",
+      "subtopics": [
+        {
+          "id": 1,
+          "title": "Limits",
+          "text": "",
+          "images": [],
+          "tests": []
+        },
+        {
+          "id": 2,
+          "title": "Derivatives",
+          "text": "",
+          "images": [],
+          "tests": []
+        },
+        {
+          "id": 3,
+          "title": "Integrals",
+          "text": "",
+          "images": [],
+          "tests": []
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Statistics",
+      "subtopics": [
+        {
+          "id": 1,
+          "title": "Mean, Median, Mode",
+          "text": "",
+          "images": [],
+          "tests": []
+        },
+        {
+          "id": 2,
+          "title": "Probability",
+          "text": "",
+          "images": [],
+          "tests": []
+        },
+        {
+          "id": 3,
+          "title": "Distributions",
+          "text": "",
+          "images": [],
+          "tests": []
+        }
+      ]
+    }
+  ]
+}

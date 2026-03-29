@@ -1,1 +1,11 @@
-.TopicList {}
+:root {
+  --h1-font-size: clamp(14px, 2vw, 24px);
+  --small-font-size: clamp(12px, 1.5vw, 18px);
+}
+
+.TopicList {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: clamp(250px, 80%, 100%);
+}

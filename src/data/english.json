@@ -1,0 +1,40 @@
+{
+  "topics": [
+    {
+      "id": 0,
+      "title": "",
+      "subtopics": [
+        {
+          "id": 0,
+          "title": "",
+          "text": "",
+          "images": [
+            {
+              "id": 0,
+              "url": "",
+              "caption": ""
+            }
+          ],
+          "tests": [
+            {
+              "id": 0,
+              "question": {
+                "number": 0,
+                "type": "",
+                "image_url": "",
+                "correct_answer": 0,
+                "answers": [
+                  {
+                    "id": 0,
+                    "text": "",
+                    "image_url": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
