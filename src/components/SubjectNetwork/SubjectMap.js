@@ -7,7 +7,7 @@ const SUBJECTS = [
   {
     id: 1,
     name: "Математика",
-    img: "math.jpg",
+
     topics: 4,
     href: "/subject/math",
     cardColor: "#1253AA",
@@ -19,7 +19,7 @@ const SUBJECTS = [
   {
     id: 2,
     name: "Українська мова",
-    img: "ukrainian.jpg",
+
     topics: 5,
     href: "/subject/ukrainian",
     cardColor: "#5B2D8E",
@@ -30,8 +30,8 @@ const SUBJECTS = [
   },
   {
     id: 3,
-    name: "Історія",
-    img: "history.jpg",
+    name: "Історія України",
+
     topics: 6,
     href: "/subject/ukrainian_history",
     cardColor: "#B71C1C",
@@ -43,7 +43,7 @@ const SUBJECTS = [
   {
     id: 4,
     name: "Англійська мова",
-    img: "english.jpg",
+
     topics: 4,
     href: "/subject/ukrainian",
     cardColor: "#00695C",

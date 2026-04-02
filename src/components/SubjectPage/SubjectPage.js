@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import TopicList from "../TopicList/TopicList";
 import "./SubjectPage.css";
+import { Link } from "react-router-dom";
 
 const SUBJECTS = {
   math: { name: "Математика" },
@@ -31,7 +32,8 @@ export default function SubjectPage() {
       .then((module) => {
         if (!cancelled) setTopics(module.default.topics);
       })
-      .catch(() => {
+      .catch((err) => {
+        console.error("Failed to load JSON:", err);
         if (!cancelled) setTopics([]);
       });
 
@@ -45,6 +47,9 @@ export default function SubjectPage() {
 
   return (
     <section>
+      <Link to="/home">
+        <p>До предметів</p>
+      </Link>
       <h1>{subject.name}</h1>
       <TopicList topics={topics} subjectId={id} />
     </section>
