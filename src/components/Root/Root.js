@@ -3,6 +3,7 @@ import SubjectMap from "../SubjectNetwork/SubjectMap";
 import SubjectPage from "../SubjectPage/SubjectPage";
 import "./Root.css";
 import Header from "../Header/Header";
+import TopicPage from '../TopicPage/TopicPage';
 
 function Root() {
   return (
@@ -13,6 +14,7 @@ function Root() {
         <Route path="/home" element={<SubjectMap />} />
         <Route path="/about" element={<div>About Page</div>} />
         <Route path="/subject/:id" element={<SubjectPage />} />
+        <Route path="/subject/:subjectId/topic/:topicId" element={<TopicPage />} />
       </Routes>
       <Outlet />
     </div>
