@@ -5,6 +5,8 @@ import SubjectPage from "../SubjectPage/SubjectPage";
 import "./Root.css";
 import Header from "../Header/Header";
 import NotesPage from "../NotesPage/NotesPage";
+import SubTopicsListPage from "../SubTopicListPage/SubTopicListPage";
+import NoteContentPage from "../NoteContentPage/NoteContentPage";
 
 function Root() {
   return (
@@ -18,6 +20,10 @@ function Root() {
           <Route path="/subject/:subjectId" element={<SubjectPage />} />
   <Route path="/subject/:subjectId/topic/:topicId" element={<TopicPage/>} /> 
   <Route path="/subject/:subjectId/topic/:topicId/notes" element={<NotesPage/>} />
+  
+  <Route path="/subject/:subjectId/topic/:topicId" element={<TopicPage />} />
+  <Route path="/subject/:subjectId/topic/:topicId/note" element={<SubTopicsListPage />} />
+  <Route path="/subject/:subjectId/topic/:topicId/note/:subtopicId" element={<NoteContentPage />} />
 
       </Routes>
       <Outlet />
