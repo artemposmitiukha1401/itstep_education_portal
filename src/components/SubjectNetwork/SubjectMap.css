@@ -3,9 +3,11 @@
 .subject-map {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  flex: 1;         
+  min-height: 0;   
   overflow: hidden;
   background: #080c18;
+  
 }
 
 .stars-canvas {

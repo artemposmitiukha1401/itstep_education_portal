@@ -36,7 +36,7 @@
   flex-wrap: wrap;
 }
 
-/* Override inline styles from TopicPage.js */
+/* Override inline styles from TheoryAndTests.js */
 .TopicContent a {
   display: flex !important;
   align-items: center;

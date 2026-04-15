@@ -1,4 +1,4 @@
-import './TopicPage.css';
+import './TheoryAndTests.css';
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
@@ -10,7 +10,7 @@ const JSON_MAP = {
   ukrainian_history: () => import('../../data/ukrainian_history.json'),
 };
 
-export default function TopicPage() {
+export default function TheoryAndTests() {
   const { subjectId, topicId } = useParams();
   const [topic, setTopic] = useState(null);
 
@@ -33,8 +33,8 @@ export default function TopicPage() {
       <Link to={`/subject/${subjectId}`}>Назад</Link>
       <h1>{topic.title}</h1>
       <div className="TopicContent" style={{ display: 'flex', gap: '20px' }}>
-        <Link to={`/subject/${subjectId}/topic/${topicId}/note`} style={{display: 'Flex', padding: '20px 40px', border: '1px solid #FFF'}}>Теорія</Link>
-        <Link to={`/subject/${subjectId}/topic/${topicId}/quiz`} style={{display: 'Flex', padding: '20px 40px', border: '1px solid #FFF'}}>Тести</Link>
+        <Link to={`/subject/${subjectId}/topic/${topicId}/notes`}>Теорія</Link>
+        <Link to={`/subject/${subjectId}/topic/${topicId}/quiz`} >Тести</Link>
       </div>
     </div>
   );

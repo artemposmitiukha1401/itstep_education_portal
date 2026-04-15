@@ -7,7 +7,6 @@ const SUBJECTS = [
   {
     id: 1,
     name: "Математика",
-
     topics: 4,
     href: "/subject/math",
     cardColor: "#1253AA",
@@ -15,11 +14,15 @@ const SUBJECTS = [
     lightColor: "#d6e8ff",
     icon: "∑",
     pulse: Math.random() * Math.PI * 2,
+    // planet flavour
+    bandColor: "#0a3a7a",
+    hasRing: false,
+    lightAngle: -0.6,   // radians: direction of the "sun"
+    atmosphereColor: "#7ab4ff",
   },
   {
     id: 2,
     name: "Українська мова",
-
     topics: 5,
     href: "/subject/ukrainian",
     cardColor: "#5B2D8E",
@@ -27,11 +30,14 @@ const SUBJECTS = [
     lightColor: "#ead6ff",
     icon: "А",
     pulse: Math.random() * Math.PI * 2,
+    bandColor: "#3a1a60",
+    hasRing: true,
+    lightAngle: -0.4,
+    atmosphereColor: "#c084fc",
   },
   {
     id: 3,
     name: "Історія України",
-
     topics: 6,
     href: "/subject/ukrainian_history",
     cardColor: "#B71C1C",
@@ -39,11 +45,14 @@ const SUBJECTS = [
     lightColor: "#ffd6d6",
     icon: "⚑",
     pulse: Math.random() * Math.PI * 2,
+    bandColor: "#7a0d0d",
+    hasRing: false,
+    lightAngle: -0.8,
+    atmosphereColor: "#ff9f9f",
   },
   {
     id: 4,
     name: "Англійська мова",
-
     topics: 4,
     href: "/subject/ukrainian",
     cardColor: "#00695C",
@@ -51,6 +60,10 @@ const SUBJECTS = [
     lightColor: "#d6f5f2",
     icon: "En",
     pulse: Math.random() * Math.PI * 2,
+    bandColor: "#004d43",
+    hasRing: true,
+    lightAngle: -0.5,
+    atmosphereColor: "#5eeada",
   },
 ];
 
@@ -88,6 +101,115 @@ function topicWord(n) {
   if (n >= 2 && n <= 4) return "теми";
   return "тем";
 }
+
+// ─── planet drawing helpers ────────────────────────────────────────────────
+
+function drawPlanetSphere(ctx, n, r) {
+  const lx = Math.cos(n.lightAngle);
+  const ly = Math.sin(n.lightAngle);
+  // highlight offset – place it at ~35% radius toward the light
+  const hx = n.x + lx * r * 0.35;
+  const hy = n.y + ly * r * 0.35;
+
+  // --- base gradient: dark side → lit side ---
+  const base = ctx.createRadialGradient(hx, hy, r * 0.05, n.x, n.y, r);
+  base.addColorStop(0, hexAlpha(n.lightColor, 0.95));
+  base.addColorStop(0.35, n.cardColor);
+  base.addColorStop(0.75, n.bandColor);
+  base.addColorStop(1, "rgba(0,0,0,0.95)");
+  ctx.fillStyle = base;
+  ctx.fill();
+
+  // --- surface bands (latitude-like stripes) ---
+  // We clip to the circle already, so just draw horizontal ellipses
+  const numBands = 3;
+  for (let b = 0; b < numBands; b++) {
+    const t = (b + 1) / (numBands + 1); // 0..1 across diameter
+    const bandY = n.y - r + t * r * 2;
+    const halfW = Math.sqrt(Math.max(0, r * r - (bandY - n.y) ** 2));
+    const bandH = r * 0.07;
+    ctx.beginPath();
+    ctx.ellipse(n.x, bandY, halfW * 0.98, bandH, 0, 0, Math.PI * 2);
+    ctx.fillStyle = hexAlpha(n.bandColor, 0.28);
+    ctx.fill();
+  }
+
+  // --- specular highlight (small bright blob on the lit side) ---
+  const specX = n.x + lx * r * 0.42;
+  const specY = n.y + ly * r * 0.42;
+  const spec = ctx.createRadialGradient(specX, specY, 0, specX, specY, r * 0.38);
+  spec.addColorStop(0, "rgba(255,255,255,0.55)");
+  spec.addColorStop(0.4, "rgba(255,255,255,0.12)");
+  spec.addColorStop(1, "rgba(255,255,255,0)");
+  ctx.fillStyle = spec;
+  ctx.fill();
+
+  // --- terminator shadow (dark limb on the opposite side) ---
+  const sx = n.x - lx * r * 0.15;
+  const sy = n.y - ly * r * 0.15;
+  const shadow = ctx.createRadialGradient(sx, sy, r * 0.45, sx, sy, r * 1.05);
+  shadow.addColorStop(0, "rgba(0,0,0,0)");
+  shadow.addColorStop(1, "rgba(0,0,0,0.62)");
+  ctx.fillStyle = shadow;
+  ctx.fill();
+}
+
+function drawAtmosphere(ctx, n, r, hp, pulse) {
+  // soft rim glow
+  const atmR = r * (1.18 + pulse * 0.04 + hp * 0.06);
+  const atm = ctx.createRadialGradient(n.x, n.y, r * 0.88, n.x, n.y, atmR);
+  atm.addColorStop(0, hexAlpha(n.atmosphereColor, 0.28 + hp * 0.12 + pulse * 0.06));
+  atm.addColorStop(0.5, hexAlpha(n.atmosphereColor, 0.08 + hp * 0.04));
+  atm.addColorStop(1, "rgba(0,0,0,0)");
+  ctx.beginPath();
+  ctx.arc(n.x, n.y, atmR, 0, Math.PI * 2);
+  ctx.fillStyle = atm;
+  ctx.fill();
+}
+
+function drawOuterGlow(ctx, n, r, hp, pulse) {
+  const glowR = r * 2.5;
+  const glow = ctx.createRadialGradient(n.x, n.y, r * 0.4, n.x, n.y, glowR);
+  glow.addColorStop(0, hexAlpha(n.accentColor, 0.18 + pulse * 0.06 + hp * 0.1));
+  glow.addColorStop(0.45, hexAlpha(n.accentColor, 0.04 + hp * 0.03));
+  glow.addColorStop(1, "rgba(0,0,0,0)");
+  ctx.beginPath();
+  ctx.arc(n.x, n.y, glowR, 0, Math.PI * 2);
+  ctx.fillStyle = glow;
+  ctx.fill();
+}
+
+function drawRing(ctx, n, r, hp, pulse, t) {
+  const tilt = 0.35; // vertical compression (perspective)
+  const rInner = r * 1.32;
+  const rOuter = r * 1.78 + hp * 6;
+  const spin = t * 0.00012; // very slow ring rotation
+
+  ctx.save();
+  ctx.translate(n.x, n.y);
+  ctx.scale(1, tilt);
+  ctx.rotate(spin);
+
+  // back-half of ring (behind planet, drawn before sphere)
+  // We use a clipping trick: just draw the full ring with low opacity;
+  // the sphere drawn on top will naturally occlude the front half.
+  const rg = ctx.createRadialGradient(0, 0, rInner, 0, 0, rOuter);
+  rg.addColorStop(0, hexAlpha(n.accentColor, 0.0));
+  rg.addColorStop(0.15, hexAlpha(n.accentColor, 0.55 + hp * 0.2 + pulse * 0.08));
+  rg.addColorStop(0.5, hexAlpha(n.lightColor, 0.35 + hp * 0.1));
+  rg.addColorStop(0.85, hexAlpha(n.accentColor, 0.38 + hp * 0.1));
+  rg.addColorStop(1, "rgba(0,0,0,0)");
+
+  ctx.beginPath();
+  ctx.arc(0, 0, rOuter, 0, Math.PI * 2);
+  ctx.arc(0, 0, rInner, 0, Math.PI * 2, true);
+  ctx.fillStyle = rg;
+  ctx.fill();
+
+  ctx.restore();
+}
+
+// ─── main node draw ────────────────────────────────────────────────────────
 
 export default function SubjectMap() {
   const navigate = useNavigate();
@@ -219,22 +341,10 @@ export default function SubjectMap() {
       n.x += n.vx;
       n.y += n.vy;
       const margin = RADIUS + 20;
-      if (n.x < margin) {
-        n.x = margin;
-        n.vx *= -0.5;
-      }
-      if (n.x > W - margin) {
-        n.x = W - margin;
-        n.vx *= -0.5;
-      }
-      if (n.y < margin) {
-        n.y = margin;
-        n.vy *= -0.5;
-      }
-      if (n.y > H - margin) {
-        n.y = H - margin;
-        n.vy *= -0.5;
-      }
+      if (n.x < margin) { n.x = margin; n.vx *= -0.5; }
+      if (n.x > W - margin) { n.x = W - margin; n.vx *= -0.5; }
+      if (n.y < margin) { n.y = margin; n.vy *= -0.5; }
+      if (n.y > H - margin) { n.y = H - margin; n.vy *= -0.5; }
     });
   }, []);
 
@@ -250,14 +360,8 @@ export default function SubjectMap() {
         const alpha = Math.max(0, 1 - dist / 520);
         const highlight = Math.max(a.hoverProgress, b.hoverProgress);
         const grad = ctx.createLinearGradient(a.x, a.y, b.x, b.y);
-        grad.addColorStop(
-          0,
-          hexAlpha(a.accentColor, alpha * (0.22 + highlight * 0.43)),
-        );
-        grad.addColorStop(
-          1,
-          hexAlpha(b.accentColor, alpha * (0.22 + highlight * 0.43)),
-        );
+        grad.addColorStop(0, hexAlpha(a.accentColor, alpha * (0.22 + highlight * 0.43)));
+        grad.addColorStop(1, hexAlpha(b.accentColor, alpha * (0.22 + highlight * 0.43)));
         ctx.beginPath();
         ctx.moveTo(a.x, a.y);
         ctx.lineTo(b.x, b.y);
@@ -277,61 +381,49 @@ export default function SubjectMap() {
     const pulse = Math.sin(t * 0.001 + n.pulse) * 0.5 + 0.5;
     const r = RADIUS + hp * 10 + pulse * 2;
 
-    ctx.save();
-    const glowR = r * 2.2;
-    const glow = ctx.createRadialGradient(n.x, n.y, r * 0.3, n.x, n.y, glowR);
-    glow.addColorStop(
-      0,
-      hexAlpha(n.accentColor, 0.2 + pulse * 0.08 + hp * 0.12),
-    );
-    glow.addColorStop(0.5, hexAlpha(n.cardColor, 0.07 + hp * 0.05));
-    glow.addColorStop(1, "rgba(0,0,0,0)");
-    ctx.beginPath();
-    ctx.arc(n.x, n.y, glowR, 0, Math.PI * 2);
-    ctx.fillStyle = glow;
-    ctx.fill();
+    // 1. outer space glow (behind everything)
+    drawOuterGlow(ctx, n, r, hp, pulse);
 
+    // 2. back half of ring (drawn before sphere so sphere occludes front)
+    if (n.hasRing) {
+      ctx.save();
+      // clip to back half only (below the planet centre line, roughly)
+      ctx.beginPath();
+      ctx.rect(n.x - r * 2.2, n.y, r * 4.4, r * 2.2);
+      ctx.clip();
+      drawRing(ctx, n, r, hp, pulse, t);
+      ctx.restore();
+    }
+
+    // 3. sphere body (clip to circle for all internal fills)
+    ctx.save();
     ctx.beginPath();
     ctx.arc(n.x, n.y, r, 0, Math.PI * 2);
     ctx.clip();
-    ctx.fillStyle = n.cardColor;
-    ctx.fill();
-
-    if (n.imgLoaded) {
-      ctx.globalAlpha = 0.1 + hp * 0.06;
-      ctx.drawImage(n.imgLoaded, n.x - r, n.y - r, r * 2, r * 2);
-      ctx.globalAlpha = 1;
-    }
-
-    ctx.beginPath();
-    ctx.moveTo(n.x - r, n.y - r);
-    ctx.lineTo(n.x - r + r * 0.85, n.y - r);
-    ctx.lineTo(n.x - r, n.y - r + r * 0.85);
-    ctx.closePath();
-    ctx.fillStyle = hexAlpha(n.accentColor, 0.25 + hp * 0.1);
-    ctx.fill();
-
-    ctx.beginPath();
-    ctx.moveTo(n.x + r, n.y + r);
-    ctx.lineTo(n.x + r - r * 0.75, n.y + r);
-    ctx.lineTo(n.x + r, n.y + r - r * 0.75);
-    ctx.closePath();
-    ctx.fillStyle = "rgba(0,0,0,0.22)";
-    ctx.fill();
-
-    const vignette = ctx.createRadialGradient(n.x, n.y, r * 0.35, n.x, n.y, r);
-    vignette.addColorStop(0, "rgba(0,0,0,0)");
-    vignette.addColorStop(1, "rgba(0,0,0,0.32)");
-    ctx.fillStyle = vignette;
-    ctx.fill();
+    drawPlanetSphere(ctx, n, r);
     ctx.restore();
 
+    // 4. front half of ring (drawn after sphere so it overlaps correctly)
+    if (n.hasRing) {
+      ctx.save();
+      ctx.beginPath();
+      ctx.rect(n.x - r * 2.2, n.y - r * 2.2, r * 4.4, r * 2.2);
+      ctx.clip();
+      drawRing(ctx, n, r, hp, pulse, t);
+      ctx.restore();
+    }
+
+    // 5. atmosphere rim (on top of sphere)
+    drawAtmosphere(ctx, n, r, hp, pulse);
+
+    // 6. crisp edge stroke
     ctx.beginPath();
     ctx.arc(n.x, n.y, r, 0, Math.PI * 2);
-    ctx.strokeStyle = hexAlpha(n.accentColor, 0.45 + hp * 0.55 + pulse * 0.2);
+    ctx.strokeStyle = hexAlpha(n.accentColor, 0.55 + hp * 0.45 + pulse * 0.15);
     ctx.lineWidth = 1.5 + hp * 1.5;
     ctx.stroke();
 
+    // 7. hover pulse rings
     if (hp > 0.01) {
       ctx.beginPath();
       ctx.arc(n.x, n.y, r + 8 + pulse * 7, 0, Math.PI * 2);
@@ -346,6 +438,7 @@ export default function SubjectMap() {
       ctx.stroke();
     }
 
+    // 8. icon badge
     const badgeX = n.x + r * 0.52;
     const badgeY = n.y - r * 0.54;
     const badgeR = r * 0.24;
@@ -365,6 +458,7 @@ export default function SubjectMap() {
     ctx.fillText(n.icon, badgeX, badgeY);
     ctx.restore();
 
+    // 9. name label + topic pill
     ctx.save();
     ctx.textAlign = "center";
     ctx.textBaseline = "middle";
@@ -401,6 +495,7 @@ export default function SubjectMap() {
     ctx.fillText(pillText, n.x, pillY);
     ctx.restore();
   }, []);
+
   const getNodeAt = useCallback((x, y) => {
     const canvas = netRef.current;
     if (!canvas) return null;
@@ -542,12 +637,9 @@ export default function SubjectMap() {
   ]);
 
   return (
-    <div className="subject-map">
-      <canvas ref={starsRef} className="stars-canvas" />
-      <canvas ref={netRef} className="net-canvas" />
-      <a href="./pages/results.html" className="results-link">
-        Результати
-      </a>
-    </div>
+      <div className="subject-map">
+        <canvas ref={starsRef} className="stars-canvas" />
+        <canvas ref={netRef} className="net-canvas" />
+      </div>
   );
 }

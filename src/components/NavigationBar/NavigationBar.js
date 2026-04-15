@@ -10,6 +10,10 @@ const NAV_ITEMS = [
     name: "Про нас",
     link: "/about",
   },
+  {
+    name: "Результати",
+    link: "/results",
+  },
 ];
 
 function NavigationBar() {

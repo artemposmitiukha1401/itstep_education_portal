@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import TopicList from "../TopicList/TopicList";
-import "./SubjectPage.css";
+import "./SubjectsTopics.css";
 import { Link } from "react-router-dom";
 
 const SUBJECTS = {
@@ -18,7 +18,7 @@ const JSON_MAP = {
   ukrainian_history: () => import("../../data/ukrainian_history.json"),
 };
 
-export default function SubjectPage() {
+export default function SubjectsTopics() {
   const { id } = useParams();
   const subject = SUBJECTS[id];
   const [topics, setTopics] = useState(null);

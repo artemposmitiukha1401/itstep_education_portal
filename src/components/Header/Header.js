@@ -1,9 +1,10 @@
 import NavigationBar from "../NavigationBar/NavigationBar";
 import "./Header.css";
+import { Link } from "react-router-dom";
 function Header() {
   return (
     <header className="Header">
-      <h1>Освітня платформа</h1>
+      <Link className="to-home" to="/home">Освітня платформа</Link>
       <NavigationBar></NavigationBar>
     </header>
   );

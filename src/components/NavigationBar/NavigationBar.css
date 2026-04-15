@@ -1,1 +1,27 @@
-.NavigationBar {}
+.NavigationBar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.NavigationBar a {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  padding: 6px 14px;
+  border-radius: var(--radius-sm);
+  letter-spacing: 0.02em;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.NavigationBar a:hover {
+  color: var(--color-text-primary);
+  background-color: var(--color-accent-light);
+}
+
+.NavigationBar a.active {
+  color: var(--color-accent);
+  background-color: var(--color-accent-light);
+}

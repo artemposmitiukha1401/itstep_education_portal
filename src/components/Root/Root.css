@@ -1,3 +1,81 @@
-* {
-  color: white;
+@import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Didact+Gothic&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --color-bg: #fdfdfd;
+  --color-surface: #ffffff;
+  --color-surface-raised: #faf8f5;
+  --color-border: #e2ddd6;
+  --color-border-strong: #c8c0b4;
+
+  --color-text-primary: #1a1714;
+  --color-text-secondary: #6b6259;
+  --color-text-muted: #a89f94;
+
+  --color-accent: #572ac0;
+  --color-accent-light: #e8e1f0;
+  --color-accent-hover: #8331cf;
+
+  --font-display: "Didact Gothic", Georgia, serif;
+  --font-body: "Libre Franklin", system-ui, sans-serif;
+
+  --text-xs:   clamp(11px, 1.2vw, 13px);
+  --text-sm:   clamp(13px, 1.5vw, 15px);
+  --text-base: clamp(14px, 1.8vw, 16px);
+  --text-lg:   clamp(16px, 2vw, 20px);
+  --text-xl:   clamp(20px, 2.5vw, 28px);
+  --text-2xl:  clamp(26px, 3.5vw, 40px);
+
+  --space-xs:  4px;
+  --space-sm:  8px;
+  --space-md:  16px;
+  --space-lg:  24px;
+  --space-xl:  40px;
+  --space-2xl: 64px;
+
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+
+
+  --shadow-sm: 0 1px 3px rgba(26, 23, 20, 0.08);
+  --shadow-md: 0 4px 16px rgba(26, 23, 20, 0.10);
+  --shadow-lg: 0 12px 40px rgba(26, 23, 20, 0.13);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--color-accent-hover);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  line-height: 1.2;
+}
+
+.Root {
+  min-height: 100vh;
+  background-color: var(--color-bg);
+  display: flex;
+  flex-direction: column;
 }
