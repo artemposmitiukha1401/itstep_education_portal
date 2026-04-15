@@ -4,9 +4,9 @@ import TheoryAndTests from "../TheoryAndTests/TheoryAndTests";
 import SubjectsTopics from "../SubjectsTopics/SubjectsTopics";
 import "./Root.css";
 import Header from "../Header/Header";
+
 import NotesPage from "../NotesPage/NotesPage";
-import SubtopicNotePage from "../SubtopicNotePage/SubtopicNotePage";
-import TestsListPage from "../TestsListPage/TestsListPage";
+import SubtopicNotePage from"../SubtopicNotePage/SubtopicNotePage"
 
 export default function Root() {
   return (
@@ -26,10 +26,10 @@ export default function Root() {
           path="/subject/:subjectId/topic/:topicId/notes"
           element={<NotesPage />}
         />
-          <Route
+          {/* <Route
               path="/subject/:subjectId/topic/:topicId/quiz"
-              element={<TestsListPage />}
-          />
+              element={>}
+          /> */}
           <Route
               path="/subject/:subjectId/topic/:topicId/notes/:subtopicId"
               element={<SubtopicNotePage />}
