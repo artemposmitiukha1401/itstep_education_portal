@@ -47,9 +47,7 @@ export default function SubjectPage() {
 
   return (
     <section>
-      <Link to="/home">
-        <p>До предметів</p>
-      </Link>
+      <Link to="/home">До предметів</Link>
       <h1>{subject.name}</h1>
       <TopicList topics={topics} subjectId={id} />
     </section>

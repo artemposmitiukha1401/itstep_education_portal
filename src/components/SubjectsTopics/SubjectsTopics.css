@@ -1,0 +1,38 @@
+.SubjectPage,
+section {
+  max-width: 860px;
+  margin: var(--space-2xl) auto;
+  padding: 0 var(--space-xl);
+}
+
+.SubjectPage > a,
+section > a {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  text-decoration: none;
+  margin-bottom: var(--space-lg);
+  transition: color 0.2s;
+}
+
+.SubjectPage > a::before,
+section > a::before {
+  content: "←";
+}
+
+.SubjectPage > a:hover,
+section > a:hover {
+  color: var(--color-accent);
+}
+
+.SubjectPage h1,
+section > h1 {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-xl);
+  padding-bottom: var(--space-md);
+  border-bottom: 2px solid var(--color-border);
+}
