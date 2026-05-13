@@ -16,6 +16,7 @@ export default [
       globals: {
         document: "readonly",
         window: "readonly",
+        ...globals.browser,
         console: "readonly",
       },
     },
@@ -24,6 +25,9 @@ export default [
       ...reactHooks.configs.recommended.rules,
       "react/react-in-jsx-scope": "off",
       "react/prop-types": "off",
+      "@typescript-eslint/no-unused-vars": "off",
+      "no-unused-vars": "off",
+
     },
     settings: {
       react: { version: "detect" },

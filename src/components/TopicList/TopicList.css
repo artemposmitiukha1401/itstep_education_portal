@@ -1,56 +1,315 @@
-:root {
-  --h1-font-size: clamp(14px, 2vw, 20px);
-  --small-font-size: clamp(12px, 1.5vw, 14px);
-}
+@import url('https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,300;0,400;0,600;1,300&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@import url("../Root/Root.css");
 
 .TopicList {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-sm);
-  width: 100%;
+
+    min-height: 100vh;
+    padding: 3rem 1.25rem 5rem;
+    max-width: 1224px;
+    width: 1224px;
+    margin: 0 auto;;
+
 }
 
-.TopicItem {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: var(--space-xl);
-  padding: var(--space-md) var(--space-lg);
-  background-color: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  text-decoration: none;
-  color: var(--color-text-primary);
-  box-shadow: var(--shadow-sm);
-  transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
+
+.TopicList-title {
+    font-size: var(--text-title);
+    font-weight: 600;
+    line-height: 1.25;
+    margin: 0 0 2rem;
+    padding-bottom: 0.75rem;
+
 }
 
-.TopicItem:hover {
-  border-color: var(--color-accent);
-  box-shadow: var(--shadow-md);
-  transform: translateY(-1px);
-  color: var(--color-text-primary);
+.TopicList-arrowIcon {
+    width: 22px;
+    height: 22px;
+    transition: transform 0.25s ease;
 }
 
-.TopicItem h2 {
-  font-family: var(--font-body);
-  font-size: var(--h1-font-size);
-  font-weight: 500;
-  color: var(--color-text-primary);
+.TopicList-arrowIcon.open {
+    transform: rotate(180deg);
 }
 
-.TopicItem span {
-  font-size: var(--small-font-size);
-  font-weight: 500;
-  color: var(--color-accent);
-  white-space: nowrap;
-  border: 1px solid var(--color-accent);
-  padding: 4px 12px;
-  border-radius: 100px;
-  transition: background-color 0.2s, color 0.2s;
+.TopicList-topic {
+    border-bottom: 3px solid var(--color-border);
 }
 
-.TopicItem:hover span {
-  background-color: var(--color-accent);
-  color: white;
+
+.TopicList-topic:last-child {
+    border-bottom: none;
+}
+
+
+.TopicList-topicButton {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 1.2rem 0.25rem;
+
+    font-size: var(--text-base);
+    font-weight: 600;
+
+    text-align: left;
+    transition: color 0.18s;
+}
+
+.topics {
+    border: 3px solid var(--color-border);
+    padding: 18px 20px;
+    border-radius: 20px;
+}
+
+
+.TopicList-topicButton span:last-child {
+
+    font-size: 0.7rem;
+
+    flex-shrink: 0;
+    transition: color 0.18s;
+}
+
+
+.TopicList-subtopics {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    margin: 0 0.25rem;
+    gap: 0.15rem;
+
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.1s ease-in-out,
+    opacity 0.25s ease,
+    padding 0.35s ease;
+}
+
+.TopicList-subtopics.open {
+    max-height: 600px;
+    opacity: 1;
+    padding: 0.25rem 1rem 1rem;
+}
+.TopicList-title {
+    transition: opacity 0.25s ease;
+}
+
+.TopicList-layout.split .TopicList-title {
+    opacity: 0;
+    pointer-events: none;
+}
+.TopicList-subtopicLink {
+    font-size: var(--text-semibase);
+    color: var(--color-text-primary);
+    text-decoration: none;
+    padding: 0.45em 0.75em;
+
+    width: max-content;
+    transition: all ease-in-out 0.18s;
+    line-height: 1.4;
+    border-radius: 6px;
+}
+
+.TopicList-subtopicLink:hover {
+    color: var(--color-text-primary);
+    background-color: var(--color-accent-light);
+
+}
+
+.TopicList-layout {
+    display: flex;
+    min-height: 100vh;
+    width: 1224px;
+    margin: 0 auto 5rem;
+    margin-top: 3rem;
+    gap: 1rem;
+}
+.TopicList-sidebar {
+    width: 100%;
+    transition: width 0.3s ease;
+    flex-shrink: 0;
+    align-self: flex-start;
+    position: sticky;
+    scrollbar-width: none;
+    top: 0;
+}
+.topics {
+    border: 3px solid var(--color-border);
+    padding: 18px 20px;
+    border-radius: 20px;
+    max-height: 70vh;
+    scrollbar-width: none;
+    overflow-y: auto;
+}
+.TopicList-contentNav {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+.nav-btn {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    width: 180px;
+    height: 52px;
+    padding: 10px 22px;
+    border: 3px solid var(--color-border);
+    border-radius: 6px;
+    background: none;
+    cursor: pointer;
+    overflow: hidden;
+    transition: border-color 0.25s, background 0.25s;
+}
+
+.nav-btn:hover {
+    background-color: #e0f2fe;
+}
+
+.nav-btn:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.nav-btn .btn-text,
+.nav-btn .btn-arrow {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--text-base);
+    font-weight: 500;
+    color: var(--color-text-primary);
+    white-space: nowrap;
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.25s ease;
+}
+.font-size-nav-btn .font-size-icon {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    transform: translateX(100%);
+    opacity: 0;
+    transition:
+            transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+            opacity 0.25s ease;
+}
+
+.font-size-nav-btn:hover .btn-text {
+    transform: translateX(-110%);
+    opacity: 0;
+}
+
+.font-size-nav-btn:hover .font-size-icon {
+    transform: translateX(0);
+    opacity: 1;
+}
+.nav-btn .btn-arrow {
+    width: 30px;
+    margin: auto;
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.nav-btn:hover .btn-text {
+    transform: translateX(-110%);
+    opacity: 0;
+}
+
+.nav-btn:hover .btn-arrow {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* Кнопка "Далі" — стрелка выезжает слева */
+.nav-btn--right:hover .btn-text {
+    transform: translateX(110%);
+    opacity: 0;
+}
+
+.nav-btn--right .btn-arrow {
+    transform: translateX(-100%);
+
+}
+
+.nav-btn--right:hover .btn-arrow {
+    transform: translateX(0);
+}
+
+.TopicList-layout.split .TopicList-sidebar {
+    width: 400px;
+}
+.TopicList-content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 0 24px 24px;
+}
+
+/* кнопка подтемы вместо Link */
+.TopicList-subtopicLink {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px 16px;
+}
+
+.TopicList-subtopicLink.active {
+    background-color: var(--color-accent-light);;
+}
+
+.TopicList-noSubtopics {
+    font-style: italic;
+
+    font-size: 0.9rem;
+    padding: 0.4em 0.75em;
+    margin: 0;
+}
+
+.TopicList-empty {
+    min-height: 100vh;
+
+    font-family: 'Literata', Georgia, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: var(--muted, #7a7269);
+    font-style: italic;
+}
+
+.TopicList-empty h2 {
+    font-style: normal;
+    font-weight: 600;
+    color: var(--ink, #1a1814);
+    margin: 0;
+}
+
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+    .TopicList {
+        padding: 2rem 1rem 4rem;
+    }
+
+    .TopicList-title {
+        font-size: 1.45rem;
+    }
+
+    .TopicList-topicButton {
+        font-size: 1rem;
+    }
 }

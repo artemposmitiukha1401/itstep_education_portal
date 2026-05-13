@@ -1,0 +1,5228 @@
+[
+  {
+    "id": 1,
+    "topic_id": "101",
+    "variant_id": "1",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_101/variant_1/1.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Б"
+  },
+  {
+    "id": 2,
+    "topic_id": "101",
+    "variant_id": "1",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_101/variant_1/2.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "А"
+  },
+  {
+    "id": 3,
+    "topic_id": "101",
+    "variant_id": "1",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_101/variant_1/3.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Д"
+  },
+  {
+    "id": 4,
+    "topic_id": "101",
+    "variant_id": "1",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_101/variant_1/4.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Б"
+  },
+  {
+    "id": 5,
+    "topic_id": "101",
+    "variant_id": "1",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_101/variant_1/5.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Г"
+  },
+  {
+    "id": 6,
+    "topic_id": "101",
+    "variant_id": "1",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_101/variant_1/6.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "А"
+  },
+  {
+    "id": 7,
+    "topic_id": "101",
+    "variant_id": "1",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_101/variant_1/7.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Б"
+  },
+  {
+    "id": 8,
+    "topic_id": "101",
+    "variant_id": "1",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_101/variant_1/8.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Б"
+  },
+  {
+    "id": 9,
+    "topic_id": "101",
+    "variant_id": "1",
+    "type": "match",
+    "question": "Установіть відповідність між числом (1–4) та множиною, до якої воно належить",
+    "image_url": "math_images/topic_101/variant_1/9.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Б; 2-Д; 3-А"
+  },
+  {
+    "id": 10,
+    "topic_id": "101",
+    "variant_id": "1",
+    "type": "match",
+    "question": "Для кожного виразу (1 -4) при a > 0 доберіть тотожно йому рівний (А - Д).",
+    "image_url": "math_images/topic_101/variant_1/10.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Г; 2-А; 3-Б"
+  },
+  {
+    "id": 11,
+    "topic_id": "101",
+    "variant_id": "1",
+    "type": "manual",
+    "question": "Обчисліть",
+    "image_url": "math_images/topic_101/variant_1/11.png",
+    "options": [],
+    "answer": "-5"
+  },
+  {
+    "id": 12,
+    "topic_id": "101",
+    "variant_id": "1",
+    "type": "manual",
+    "question": "Обчисліть значення виразу",
+    "image_url": "math_images/topic_101/variant_1/12.png",
+    "options": [],
+    "answer": "10"
+  },
+  {
+    "id": 13,
+    "topic_id": "101",
+    "variant_id": "2",
+    "type": "multiple",
+    "question": "У під'їзді дев'ятиповерхового будинку на кожному поверсі розташовано 4 квартири. На якому поверсі квартира №27, якщо квартири від №1 і далі пронумеровано послідовно від першого до останнього поверху?",
+    "image_url": "",
+    "options": [
+      "А 5",
+      "Б 6",
+      "В 7",
+      "Г 8",
+      "Д 9"
+    ],
+    "answer": "В"
+  },
+  {
+    "id": 14,
+    "topic_id": "101",
+    "variant_id": "2",
+    "type": "multiple",
+    "question": "Серед наведених дробів укажіть НАЙМЕНШИЙ.",
+    "image_url": "",
+    "options": [
+      "А 1/11",
+      "Б 2/33",
+      "В 2/11",
+      "Г 3/22",
+      "Д 1/22"
+    ],
+    "answer": "Д"
+  },
+  {
+    "id": 15,
+    "topic_id": "101",
+    "variant_id": "2",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_101/variant_2/2.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Г"
+  },
+  {
+    "id": 16,
+    "topic_id": "101",
+    "variant_id": "2",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_101/variant_2/3.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "В"
+  },
+  {
+    "id": 17,
+    "topic_id": "101",
+    "variant_id": "2",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_101/variant_2/4.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "А"
+  },
+  {
+    "id": 18,
+    "topic_id": "101",
+    "variant_id": "2",
+    "type": "multiple",
+    "question": "Ціна акції компанії зросла на 10% від її початкової ціни. Якою була початкова ціна (у грн) цієї акції, якщо її ціна тепер становить 990 грн?",
+    "image_url": "",
+    "options": [
+      "А 900",
+      "Б 1089",
+      "В 891",
+      "Г 1000",
+      "Д 980"
+    ],
+    "answer": "А"
+  },
+  {
+    "id": 19,
+    "topic_id": "101",
+    "variant_id": "2",
+    "type": "match",
+    "question": "Установіть відповідність між виразом (1–3) та проміжком (А–Д), якому належить його значення",
+    "image_url": "math_images/topic_101/variant_2/5.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Д; 2-Г; 3-В"
+  },
+  {
+    "id": 20,
+    "topic_id": "101",
+    "variant_id": "2",
+    "type": "match",
+    "question": "Установіть відповідність між виразом (1–3) та тотожно рівним йому виразом (А–Д), якщо a – довільне додатне число, a ≠ 1",
+    "image_url": "math_images/topic_101/variant_2/6.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Д; 2-В; 3-Б"
+  },
+  {
+    "id": 21,
+    "topic_id": "101",
+    "variant_id": "2",
+    "type": "match",
+    "question": "До кожного початку речення (1–3) доберіть його закінчення (А–Д) так, щоб утворилось правильне твердження",
+    "image_url": "math_images/topic_101/variant_2/7.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Б; 2-А; 3-Г"
+  },
+  {
+    "id": 22,
+    "topic_id": "101",
+    "variant_id": "2",
+    "type": "manual",
+    "question": "Компанія виділила кошти на закупівлю 80 дерев: 60 каштанів по 1500 грн кожний і 20 ялинок. Вартість кожної ялинки на 40% менша за вартість кожного каштану. Знайдіть середню вартість одного дерева (у грн).",
+    "image_url": "",
+    "options": [],
+    "answer": "1350"
+  },
+  {
+    "id": 23,
+    "topic_id": "101",
+    "variant_id": "2",
+    "type": "manual",
+    "question": "На рисунку зображено фрагмент частини поперечного перерізу стосу дерев'яних колод. У нижньому ряду стосу 13 колод, а у верхньому – одна. Визначте загальну кількість колод у цьому стосі.",
+    "image_url": "math_images/topic_101/variant_2/8.png",
+    "options": [],
+    "answer": "91"
+  },
+  {
+    "id": 24,
+    "topic_id": "101",
+    "variant_id": "2",
+    "type": "manual",
+    "question": "Обчисліть значення виразу",
+    "image_url": "math_images/topic_101/variant_2/9.png",
+    "options": [],
+    "answer": "0,04"
+  },
+  {
+    "id": 25,
+    "topic_id": "101",
+    "variant_id": "3",
+    "type": "multiple",
+    "question": "На діаграмі відображено розподіл кількості працівників фірми за віком. За даними діаграми визначте, у скільки разів кількість працівників віком від 20 до 29 років перевищує кількість працівників, яким 60 років і більше.",
+    "image_url": "math_images/topic_101/variant_3/1.png",
+    "options": [
+      "А 10",
+      "Б 32",
+      "В 18",
+      "Г 9",
+      "Д 6"
+    ],
+    "answer": "Г"
+  },
+  {
+    "id": 26,
+    "topic_id": "101",
+    "variant_id": "3",
+    "type": "multiple",
+    "question": "Микола частує свою родину фруктовим салатом із яблук, бананів й апельсинів. Для приготування однієї порції салату потрібно 1 банан, 2 апельсини та 3 яблука. Скільки апельсинів використав Микола, якщо він приготував за цим рецептом салат із 24 фруктів?",
+    "image_url": "",
+    "options": [
+      "А 3",
+      "Б 4",
+      "В 6",
+      "Г 8",
+      "Д 12"
+    ],
+    "answer": "Г"
+  },
+  {
+    "id": 27,
+    "topic_id": "101",
+    "variant_id": "3",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_101/variant_3/2.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Б"
+  },
+  {
+    "id": 28,
+    "topic_id": "101",
+    "variant_id": "3",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_101/variant_3/3.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Д"
+  },
+  {
+    "id": 29,
+    "topic_id": "101",
+    "variant_id": "3",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_101/variant_3/4.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "В"
+  },
+  {
+    "id": 30,
+    "topic_id": "101",
+    "variant_id": "3",
+    "type": "multiple",
+    "question": "Клієнт банку зняв 20% від суми рахунку, після чого на рахунку залишилося 4800 грн. Визначте, скільки грошей зняли з рахунку.",
+    "image_url": "",
+    "options": [
+      "А 960 грн",
+      "Б 1200 грн",
+      "В 1440 грн",
+      "Г 4000 грн",
+      "Д 5760 грн"
+    ],
+    "answer": "Б"
+  },
+  {
+    "id": 31,
+    "topic_id": "101",
+    "variant_id": "3",
+    "type": "match",
+    "question": "Установіть відповідність між виразом (1–3), де π – відома математична константа, та проміжком (А–Д), якому належить його значення",
+    "image_url": "math_images/topic_101/variant_3/5.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-В; 2-А; 3-Д"
+  },
+  {
+    "id": 32,
+    "topic_id": "101",
+    "variant_id": "3",
+    "type": "match",
+    "question": "Установіть відповідність між виразом (1–3) та точкою (А–Д) на координатній прямій, координатою якої є значення цього виразу",
+    "image_url": "math_images/topic_101/variant_3/6.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Г; 2-Д; 3-В"
+  },
+  {
+    "id": 33,
+    "topic_id": "101",
+    "variant_id": "3",
+    "type": "match",
+    "question": "До кожного початку речення (1–3) доберіть його закінчення (А–Д) так, щоб утворилось правильне твердження, якщо а = 3",
+    "image_url": "math_images/topic_101/variant_3/7.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-А; 2-Б; 3-Д"
+  },
+  {
+    "id": 34,
+    "topic_id": "101",
+    "variant_id": "3",
+    "type": "manual",
+    "question": "Протягом тижня два кур'єри разом доставили 210 пакетів. Кількості пакетів, доставлених першим і другим кур'єрами за цей період, відносяться як 3:7. Скільки пакетів доставив другий кур'єр?",
+    "image_url": "",
+    "options": [],
+    "answer": "147"
+  },
+  {
+    "id": 35,
+    "topic_id": "101",
+    "variant_id": "3",
+    "type": "manual",
+    "question": "Обчисліть значення виразу",
+    "image_url": "math_images/topic_101/variant_3/8.png",
+    "options": [],
+    "answer": "20,25"
+  },
+  {
+    "id": 36,
+    "topic_id": "101",
+    "variant_id": "3",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_101/variant_3/9.png",
+    "options": [],
+    "answer": "-3"
+  },
+  {
+    "id": 37,
+    "topic_id": "101",
+    "variant_id": "4",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_101/variant_4/1.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Б"
+  },
+  {
+    "id": 38,
+    "topic_id": "101",
+    "variant_id": "4",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_101/variant_4/2.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Б"
+  },
+  {
+    "id": 39,
+    "topic_id": "101",
+    "variant_id": "4",
+    "type": "multiple",
+    "question": "Спростіть вираз: -5x⁻³y · (-2xy⁻³) · 3x²y⁻⁵",
+    "image_url": "",
+    "options": [
+      "А 30y¹⁵x⁻⁶",
+      "Б 30y¹⁵",
+      "В 30y⁻⁷x",
+      "Г 30y⁻⁷",
+      "Д -30y⁻⁷"
+    ],
+    "answer": "Г"
+  },
+  {
+    "id": 40,
+    "topic_id": "101",
+    "variant_id": "4",
+    "type": "multiple",
+    "question": "Якщо 2cosα – 5sinα = 0, то tgα = …",
+    "image_url": "",
+    "options": [
+      "А 2/5",
+      "Б -2/5",
+      "В -3",
+      "Г -5/2",
+      "Д 5/2"
+    ],
+    "answer": "А"
+  },
+  {
+    "id": 41,
+    "topic_id": "101",
+    "variant_id": "4",
+    "type": "multiple",
+    "question": "Спростіть вираз: a(a + 2b) – (a + b)²",
+    "image_url": "",
+    "options": [
+      "А 4ab + b²",
+      "Б 4ab - b²",
+      "В -b²",
+      "Г 2ab - b²",
+      "Д b²"
+    ],
+    "answer": "В"
+  },
+  {
+    "id": 42,
+    "topic_id": "101",
+    "variant_id": "4",
+    "type": "multiple",
+    "question": "За переказ грошей клієнт повинен сплатити банку винагороду в розмірі 2% від суми переказу. Скільки всього грошей (у грн) йому потрібно сплатити в касу банку, якщо сума переказу становить 30000 грн?",
+    "image_url": "",
+    "options": [
+      "А 36000 грн",
+      "Б 30600 грн",
+      "В 30060 грн",
+      "Г 30006 грн",
+      "Д 30030 грн"
+    ],
+    "answer": "Б"
+  },
+  {
+    "id": 43,
+    "topic_id": "101",
+    "variant_id": "4",
+    "type": "match",
+    "question": "Установіть відповідність між виразом (1–3) та його значенням (А–Д), якщо b = -2,5",
+    "image_url": "math_images/topic_101/variant_4/6.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Д; 2-А; 3-Б"
+  },
+  {
+    "id": 44,
+    "topic_id": "101",
+    "variant_id": "4",
+    "type": "match",
+    "question": "Узгодьте вираз (1–3) із твердженням (А–Д), що є правильним для цього виразу",
+    "image_url": "math_images/topic_101/variant_4/7.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-А; 2-Д; 3-Г"
+  },
+  {
+    "id": 45,
+    "topic_id": "101",
+    "variant_id": "4",
+    "type": "match",
+    "question": "До кожного виразу (1–3) доберіть тотожно рівний йому вираз (А–Д), якщо m > 2, m – натуральне число",
+    "image_url": "math_images/topic_101/variant_4/8.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-А; 2-Д; 3-Г"
+  },
+  {
+    "id": 46,
+    "topic_id": "101",
+    "variant_id": "4",
+    "type": "manual",
+    "question": "Обчисліть",
+    "image_url": "math_images/topic_101/variant_4/9.png",
+    "options": [],
+    "answer": "-5"
+  },
+  {
+    "id": 47,
+    "topic_id": "101",
+    "variant_id": "4",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_101/variant_4/10.png",
+    "options": [],
+    "answer": "4,5"
+  },
+  {
+    "id": 48,
+    "topic_id": "101",
+    "variant_id": "4",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_101/variant_4/11.png",
+    "options": [],
+    "answer": "4,9"
+  },
+  {
+    "id": 49,
+    "topic_id": "101",
+    "variant_id": "5",
+    "type": "multiple",
+    "question": "Обчисліть значення виразу",
+    "image_url": "math_images/topic_101/variant_5/1.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Д"
+  },
+  {
+    "id": 50,
+    "topic_id": "101",
+    "variant_id": "5",
+    "type": "multiple",
+    "question": "Банк сплачує своїм вкладникам 8% річних. Визначте, скільки грошей треба покласти на рахунок, щоб через рік отримати 60 грн прибутку.",
+    "image_url": "",
+    "options": [
+      "А 1150 грн",
+      "Б 1050 грн",
+      "В 950 грн",
+      "Г 850 грн",
+      "Д 750 грн"
+    ],
+    "answer": "Д"
+  },
+  {
+    "id": 51,
+    "topic_id": "101",
+    "variant_id": "5",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_101/variant_5/2.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Б"
+  },
+  {
+    "id": 52,
+    "topic_id": "101",
+    "variant_id": "5",
+    "type": "multiple",
+    "question": "Кількість вироблених підприємством за рік столів відноситься до кількості виготовлених стільців як 2:5. Якою може бути сумарна кількість вироблених за рік підприємством столів і стільців?",
+    "image_url": "",
+    "options": [
+      "А 84",
+      "Б 97",
+      "В 101",
+      "Г 75",
+      "Д 62"
+    ],
+    "answer": "А"
+  },
+  {
+    "id": 53,
+    "topic_id": "101",
+    "variant_id": "5",
+    "type": "multiple",
+    "question": "Якщо m = n – 1, то 7 – m = …",
+    "image_url": "",
+    "options": [
+      "А n – 8",
+      "Б 6 – n",
+      "В 8 – n",
+      "Г n – 6",
+      "Д 6 + n"
+    ],
+    "answer": "В"
+  },
+  {
+    "id": 54,
+    "topic_id": "101",
+    "variant_id": "5",
+    "type": "multiple",
+    "question": "У першу годину роботи на телефон гарячої лінії надійшло 145 дзвінків, а за другу годину – на 17 дзвінків більше. Скільки всього дзвінків надійшло на телефон гарячої лінії за дві години роботи?",
+    "image_url": "",
+    "options": [
+      "А 307",
+      "Б 290",
+      "В 287",
+      "Г 273",
+      "Д 162"
+    ],
+    "answer": "А"
+  },
+  {
+    "id": 55,
+    "topic_id": "101",
+    "variant_id": "5",
+    "type": "match",
+    "question": "Установіть відповідність між виразом (1–3) і твердженням про його значення (А–Д), яке є правильним, якщо a = −2 3/1​",
+    "image_url": "math_images/topic_101/variant_5/4.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-А; 2-Д; 3-В"
+  },
+  {
+    "id": 56,
+    "topic_id": "101",
+    "variant_id": "5",
+    "type": "match",
+    "question": "Узгодьте вираз (1–3) із твердженням (А–Д), що є правильним для цього виразу",
+    "image_url": "math_images/topic_101/variant_5/6.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Б; 2-Д; 3-Г"
+  },
+  {
+    "id": 57,
+    "topic_id": "101",
+    "variant_id": "5",
+    "type": "match",
+    "question": "Узгодьте вираз (1–3) із його значенням (А–Д), якщо m m = -4/3",
+    "image_url": "math_images/topic_101/variant_5/7.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Д; 2-А; 3-Б"
+  },
+  {
+    "id": 58,
+    "topic_id": "101",
+    "variant_id": "5",
+    "type": "manual",
+    "question": "Обчисліть",
+    "image_url": "math_images/topic_101/variant_5/8.png",
+    "options": [],
+    "answer": "80"
+  },
+  {
+    "id": 59,
+    "topic_id": "101",
+    "variant_id": "5",
+    "type": "manual",
+    "question": "Дано вираз. Якого найбільшого значення він може набувати?",
+    "image_url": "math_images/topic_101/variant_5/9.png",
+    "options": [],
+    "answer": "2,5"
+  },
+  {
+    "id": 60,
+    "topic_id": "101",
+    "variant_id": "5",
+    "type": "manual",
+    "question": "Відомо, що sinα = −5/3​ та π < α < 3π/2​. Знайдіть tg a",
+    "image_url": "math_images/topic_101/variant_5/10.png",
+    "options": [],
+    "answer": "0,75"
+  },
+  {
+    "id": 61,
+    "topic_id": "102",
+    "variant_id": "1",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_102/variant_1/1.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Г"
+  },
+  {
+    "id": 62,
+    "topic_id": "102",
+    "variant_id": "1",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_102/variant_1/2.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "А"
+  },
+  {
+    "id": 63,
+    "topic_id": "102",
+    "variant_id": "1",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_102/variant_1/3.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Г"
+  },
+  {
+    "id": 64,
+    "topic_id": "102",
+    "variant_id": "1",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_102/variant_1/4.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "В"
+  },
+  {
+    "id": 65,
+    "topic_id": "102",
+    "variant_id": "1",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_102/variant_1/5.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "В"
+  },
+  {
+    "id": 66,
+    "topic_id": "102",
+    "variant_id": "1",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_102/variant_1/6.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Д"
+  },
+  {
+    "id": 67,
+    "topic_id": "102",
+    "variant_id": "1",
+    "type": "match",
+    "question": "Розв'яжіть рівняння (1-3). Установіть відповідність між кожним рівнянням та твердженням (А-Д), що є правильним для цього рівняння.",
+    "image_url": "math_images/topic_102/variant_1/7.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-А; 2-В; 3-Б"
+  },
+  {
+    "id": 68,
+    "topic_id": "102",
+    "variant_id": "1",
+    "type": "match",
+    "question": "Готуючись до НМТ, Олена запланувала протягом осінніх канікул розв’язати 300 задач. Першого дня вона розв’язала 3/20 від цієї кількості задач, а другого — 0,2 решти. Установіть відповідність між запитаннями (1–3) та правильною відповіддю на нього (А–Д).",
+    "image_url": "math_images/topic_102/variant_1/8.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Д; 2-Г; 3-Б"
+  },
+  {
+    "id": 69,
+    "topic_id": "102",
+    "variant_id": "1",
+    "type": "match",
+    "question": "Установіть відповідність між рівнянням (1–3) та твердженням про його корені (А–Д).",
+    "image_url": "math_images/topic_102/variant_1/9.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Д; 2-А; 3-Г"
+  },
+  {
+    "id": 70,
+    "topic_id": "102",
+    "variant_id": "1",
+    "type": "manual",
+    "question": "Розв’яжіть рівняння. У відповідь запишіть суму коренів.",
+    "image_url": "math_images/topic_102/variant_1/10.png",
+    "options": [],
+    "answer": "8"
+  },
+  {
+    "id": 71,
+    "topic_id": "102",
+    "variant_id": "1",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_102/variant_1/11.png",
+    "options": [],
+    "answer": "4"
+  },
+  {
+    "id": 72,
+    "topic_id": "102",
+    "variant_id": "1",
+    "type": "manual",
+    "question": "Три кондитери виготовили разом 270 тортів. Перший виготовив 2/9 цієї кількості, другий — 5/18, а третій — решту. По скільки тортів виготовив кожен кондитер. У відповідь запишіть різницю між найбільшим і найменшим із цих значень.",
+    "image_url": "",
+    "options": [],
+    "answer": "75"
+  },
+  {
+    "id": 73,
+    "topic_id": "102",
+    "variant_id": "2",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_102/variant_2/1.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "А"
+  },
+  {
+    "id": 74,
+    "topic_id": "102",
+    "variant_id": "2",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_102/variant_2/2.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Д"
+  },
+  {
+    "id": 75,
+    "topic_id": "102",
+    "variant_id": "2",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_102/variant_2/3.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Г"
+  },
+  {
+    "id": 76,
+    "topic_id": "102",
+    "variant_id": "2",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_102/variant_2/4.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "В"
+  },
+  {
+    "id": 77,
+    "topic_id": "102",
+    "variant_id": "2",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_102/variant_2/5.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "В"
+  },
+  {
+    "id": 78,
+    "topic_id": "102",
+    "variant_id": "2",
+    "type": "multiple",
+    "question": "Якому з наведених проміжків належить корінь рівняння x = 2",
+    "image_url": "",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Д"
+  },
+  {
+    "id": 79,
+    "topic_id": "102",
+    "variant_id": "2",
+    "type": "match",
+    "question": "Установіть відповідність між рівнянням (1–3) та твердженням про його корені (А–Д).",
+    "image_url": "math_images/topic_102/variant_2/6.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-В; 2-Б; 3-А"
+  },
+  {
+    "id": 80,
+    "topic_id": "102",
+    "variant_id": "2",
+    "type": "match",
+    "question": "Розв’яжіть рівняння (1–3). Установіть відповідність між кожним рівнянням та кількістю його коренів (А–Д) на відрізку [-5; 5].",
+    "image_url": "math_images/topic_102/variant_2/7.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Г; 2-Б; 3-В"
+  },
+  {
+    "id": 81,
+    "topic_id": "102",
+    "variant_id": "2",
+    "type": "match",
+    "question": "У книзі 400 сторінок. Першого дня учень прочитав 20% від обсягу книжки, а другого — 3/6 решти. Установіть відповідність між запитанням (1–3) та правильною відповіддю на нього (А–Д).",
+    "image_url": "math_images/topic_102/variant_2/8.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Б; 2-А; 3-Г"
+  },
+  {
+    "id": 82,
+    "topic_id": "102",
+    "variant_id": "2",
+    "type": "manual",
+    "question": "Розв’яжіть систему рівнянь.<br>Запишіть у відповідь СУМУ хо + Уо, якщо пара (хо; Уо) є розв'язком вказаної системирівнянь.",
+    "image_url": "math_images/topic_102/variant_2/9.png",
+    "options": [],
+    "answer": "4"
+  },
+  {
+    "id": 83,
+    "topic_id": "102",
+    "variant_id": "2",
+    "type": "manual",
+    "question": "У готелі для проживання туристів є одномісні, двомісні та тримісні номери. Їх всього 124. Якщо всі номери в готелі заповнені, то одночасно в ньому проживає 270 туристів. Скільки всього в цьому готелі тримісних номерів, якщо кількість одномісних номерів дорівнює кількості двомісних номерів?",
+    "image_url": "",
+    "options": [],
+    "answer": "56"
+  },
+  {
+    "id": 84,
+    "topic_id": "102",
+    "variant_id": "2",
+    "type": "manual",
+    "question": "Розв’яжіть систему рівнянь.",
+    "image_url": "math_images/topic_102/variant_2/10.png",
+    "options": [],
+    "answer": "0,5"
+  },
+  {
+    "id": 85,
+    "topic_id": "102",
+    "variant_id": "3",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_102/variant_3/1.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "В"
+  },
+  {
+    "id": 86,
+    "topic_id": "102",
+    "variant_id": "3",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_102/variant_3/2.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Б"
+  },
+  {
+    "id": 87,
+    "topic_id": "102",
+    "variant_id": "3",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_102/variant_3/3.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "В"
+  },
+  {
+    "id": 88,
+    "topic_id": "102",
+    "variant_id": "3",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_102/variant_3/4.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Б"
+  },
+  {
+    "id": 89,
+    "topic_id": "102",
+    "variant_id": "3",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_102/variant_3/5.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Г"
+  },
+  {
+    "id": 90,
+    "topic_id": "102",
+    "variant_id": "3",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_102/variant_3/6.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Д"
+  },
+  {
+    "id": 91,
+    "topic_id": "102",
+    "variant_id": "3",
+    "type": "match",
+    "question": "Установіть відповідність між системами рівнянь (1–3) і кількістю усіх розв’язків (А–Д) цих систем рівнянь.",
+    "image_url": "math_images/topic_102/variant_3/7.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Д; 2-А; 3-Б"
+  },
+  {
+    "id": 92,
+    "topic_id": "102",
+    "variant_id": "3",
+    "type": "match",
+    "question": "Установіть відповідність між рівняннями (1–3) та твердженнями (А–Д), що є правильними для цих рівнянь.",
+    "image_url": "math_images/topic_102/variant_3/8.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Д; 2-А; 3-Б"
+  },
+  {
+    "id": 93,
+    "topic_id": "102",
+    "variant_id": "3",
+    "type": "match",
+    "question": "Чотири насоси однакової потужності за 5 хв викачують 800 л води. Установіть відповідність між запитаннями (1–3) та правильними відповідями на них (А–Д).",
+    "image_url": "math_images/topic_102/variant_3/9.png",
+    "options": [
+      "А ",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-А; 2-Д; 3-Б"
+  },
+  {
+    "id": 94,
+    "topic_id": "102",
+    "variant_id": "3",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_102/variant_3/10.png",
+    "options": [],
+    "answer": "1"
+  },
+  {
+    "id": 95,
+    "topic_id": "102",
+    "variant_id": "3",
+    "type": "manual",
+    "question": "Якщо рівняння має один корінь, то запишіть ЙОГО у відповідь; якщо рівняння має декілька коренів, то запишіть у відповідь їх ДОБУТОК",
+    "image_url": "math_images/topic_102/variant_3/11.png",
+    "options": [],
+    "answer": "9"
+  },
+  {
+    "id": 96,
+    "topic_id": "102",
+    "variant_id": "3",
+    "type": "manual",
+    "question": "На клумбі висадили рядами 120 кущів троянд з однаковою кількістю кущів у кожному ряду. Виявилося, що кількість рядів на 14 менша за кількість кущів у кожному ряду. Скільки рядів троянд висадили?",
+    "image_url": "",
+    "options": [],
+    "answer": "6"
+  },
+  {
+    "id": 97,
+    "topic_id": "102",
+    "variant_id": "4",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_102/variant_4/1.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Д"
+  },
+  {
+    "id": 98,
+    "topic_id": "102",
+    "variant_id": "4",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_102/variant_4/2.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "А"
+  },
+  {
+    "id": 99,
+    "topic_id": "102",
+    "variant_id": "4",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_102/variant_4/3.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Д"
+  },
+  {
+    "id": 100,
+    "topic_id": "102",
+    "variant_id": "4",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_102/variant_4/4.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Г"
+  },
+  {
+    "id": 101,
+    "topic_id": "102",
+    "variant_id": "4",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_102/variant_4/5.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "А"
+  },
+  {
+    "id": 102,
+    "topic_id": "102",
+    "variant_id": "4",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_102/variant_4/6.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "В"
+  },
+  {
+    "id": 103,
+    "topic_id": "102",
+    "variant_id": "4",
+    "type": "match",
+    "question": "Установіть відповідність між рівнянням (1–3) та твердженням про його корені (А–Д).",
+    "image_url": "math_images/topic_102/variant_4/7.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Б; 2-А; 3-Г"
+  },
+  {
+    "id": 104,
+    "topic_id": "102",
+    "variant_id": "4",
+    "type": "match",
+    "question": "Установіть відповідність між рівнянням (1–3) та твердженням про його корені (А–Д).",
+    "image_url": "math_images/topic_102/variant_4/8.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Г; 2-В; 3-Б"
+  },
+  {
+    "id": 105,
+    "topic_id": "102",
+    "variant_id": "4",
+    "type": "match",
+    "question": "Кожному з рівнянь (1–3) поставте у відповідність значення величини кута (А–Д), яке є розв’язком даного рівняння на проміжку [0; π/2]",
+    "image_url": "math_images/topic_102/variant_4/9.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Д; 2-Г; 3-Б"
+  },
+  {
+    "id": 106,
+    "topic_id": "102",
+    "variant_id": "4",
+    "type": "manual",
+    "question": "Розв’яжіть рівняння.",
+    "image_url": "math_images/topic_102/variant_4/10.png",
+    "options": [],
+    "answer": "-1,5"
+  },
+  {
+    "id": 107,
+    "topic_id": "102",
+    "variant_id": "4",
+    "type": "manual",
+    "question": "Розв’яжіть систему рівнянь. Якщо (x₀; y₀) – розв’язок цієї системи, то знайдіть x₀ · y₀.",
+    "image_url": "math_images/topic_102/variant_4/11.png",
+    "options": [],
+    "answer": "-14"
+  },
+  {
+    "id": 108,
+    "topic_id": "102",
+    "variant_id": "4",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_102/variant_4/12.png",
+    "options": [],
+    "answer": "63"
+  },
+  {
+    "id": 109,
+    "topic_id": "102",
+    "variant_id": "5",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_102/variant_5/1.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "В"
+  },
+  {
+    "id": 110,
+    "topic_id": "102",
+    "variant_id": "5",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_102/variant_5/2.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Б"
+  },
+  {
+    "id": 111,
+    "topic_id": "102",
+    "variant_id": "5",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_102/variant_5/3.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Г"
+  },
+  {
+    "id": 112,
+    "topic_id": "102",
+    "variant_id": "5",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_102/variant_5/4.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "В"
+  },
+  {
+    "id": 113,
+    "topic_id": "102",
+    "variant_id": "5",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_102/variant_5/5.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Б"
+  },
+  {
+    "id": 114,
+    "topic_id": "102",
+    "variant_id": "5",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_102/variant_5/6.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Д"
+  },
+  {
+    "id": 115,
+    "topic_id": "102",
+    "variant_id": "5",
+    "type": "match",
+    "question": "Установіть відповідність між рівнянням (1–3) та кількістю всіх коренів (А–Д) цих рівнянь.",
+    "image_url": "math_images/topic_102/variant_5/7.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Б; 2-А; 3-Д"
+  },
+  {
+    "id": 116,
+    "topic_id": "102",
+    "variant_id": "5",
+    "type": "match",
+    "question": "Розв’яжіть рівняння (1–3). Установіть відповідність між умовою та коренем рівняння (А–Д).",
+    "image_url": "math_images/topic_102/variant_5/8.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-В; 2-Г; 3-А"
+  },
+  {
+    "id": 117,
+    "topic_id": "102",
+    "variant_id": "5",
+    "type": "match",
+    "question": "Установіть відповідність між рівнянням/нерівністю (1–3) та їх розв’язком (А–Д).",
+    "image_url": "math_images/topic_102/variant_5/9.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Г; 2-А; 3-В"
+  },
+  {
+    "id": 118,
+    "topic_id": "102",
+    "variant_id": "5",
+    "type": "manual",
+    "question": "Знайдіть добуток усіх коренів рівняння.",
+    "image_url": "math_images/topic_102/variant_5/10.png",
+    "options": [],
+    "answer": "121,5"
+  },
+  {
+    "id": 119,
+    "topic_id": "102",
+    "variant_id": "5",
+    "type": "manual",
+    "question": "Розв’яжіть нерівність.",
+    "image_url": "math_images/topic_102/variant_5/11.png",
+    "options": [],
+    "answer": "-48"
+  },
+  {
+    "id": 120,
+    "topic_id": "102",
+    "variant_id": "5",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_102/variant_5/12.png",
+    "options": [],
+    "answer": "-6"
+  },
+  {
+    "id": 121,
+    "topic_id": "103",
+    "variant_id": "1",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_103/variant_1/1.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Б"
+  },
+  {
+    "id": 122,
+    "topic_id": "103",
+    "variant_id": "1",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_103/variant_1/2.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Г"
+  },
+  {
+    "id": 123,
+    "topic_id": "103",
+    "variant_id": "1",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_103/variant_1/3.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Д"
+  },
+  {
+    "id": 124,
+    "topic_id": "103",
+    "variant_id": "1",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_103/variant_1/4.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Б"
+  },
+  {
+    "id": 125,
+    "topic_id": "103",
+    "variant_id": "1",
+    "type": "multiple",
+    "question": "Укажіть функцію, графік якої зображено на рисунку 2, якщо він отриманий внаслідок паралельного перенесення графіка функції у = f(x).",
+    "image_url": "math_images/topic_103/variant_1/5.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Б"
+  },
+  {
+    "id": 126,
+    "topic_id": "103",
+    "variant_id": "1",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_103/variant_1/6.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Г"
+  },
+  {
+    "id": 127,
+    "topic_id": "103",
+    "variant_id": "1",
+    "type": "match",
+    "question": "На рисунках (1-3) зображено графіки функцій, кожна з яких визначена на про- міжку [-3; 3]. Установіть відповідність між графіком (1-3) функції та властивістю (А - Д) ціеї функції.",
+    "image_url": "math_images/topic_103/variant_1/7.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-В; 2-А; 3-Д"
+  },
+  {
+    "id": 128,
+    "topic_id": "103",
+    "variant_id": "1",
+    "type": "match",
+    "question": "Установіть відповідність між функціею (1-3) та її найменшим значенням (А-Д) на відрізку [-2; 2].",
+    "image_url": "math_images/topic_103/variant_1/8.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Б; 2-В; 3-А"
+  },
+  {
+    "id": 129,
+    "topic_id": "103",
+    "variant_id": "1",
+    "type": "match",
+    "question": "Доберіть до функції (1-3) її властивість (А - Д).",
+    "image_url": "math_images/topic_103/variant_1/9.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Г; 2-Б; 3-В"
+  },
+  {
+    "id": 130,
+    "topic_id": "103",
+    "variant_id": "1",
+    "type": "manual",
+    "question": "Обчисліть інтеграл.",
+    "image_url": "math_images/topic_103/variant_1/10.png",
+    "options": [],
+    "answer": "-1"
+  },
+  {
+    "id": 131,
+    "topic_id": "103",
+    "variant_id": "1",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_103/variant_1/11.png",
+    "options": [],
+    "answer": "-35"
+  },
+  {
+    "id": 132,
+    "topic_id": "103",
+    "variant_id": "1",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_103/variant_1/12.png",
+    "options": [],
+    "answer": "20"
+  },
+  {
+    "id": 133,
+    "topic_id": "103",
+    "variant_id": "2",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_103/variant_2/1.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Б"
+  },
+  {
+    "id": 134,
+    "topic_id": "103",
+    "variant_id": "2",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_103/variant_2/2.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Г"
+  },
+  {
+    "id": 135,
+    "topic_id": "103",
+    "variant_id": "2",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_103/variant_2/3.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Г"
+  },
+  {
+    "id": 136,
+    "topic_id": "103",
+    "variant_id": "2",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_103/variant_2/4.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "А"
+  },
+  {
+    "id": 137,
+    "topic_id": "103",
+    "variant_id": "2",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_103/variant_2/5.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Б"
+  },
+  {
+    "id": 138,
+    "topic_id": "103",
+    "variant_id": "2",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_103/variant_2/6.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Б"
+  },
+  {
+    "id": 139,
+    "topic_id": "103",
+    "variant_id": "2",
+    "type": "match",
+    "question": "До кожного початку речення (1-3) доберіть його закінчення (А - Д) так, щоб утворилося правильне твердження.",
+    "image_url": "math_images/topic_103/variant_2/7.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-В; 2-А; 3-Б"
+  },
+  {
+    "id": 140,
+    "topic_id": "103",
+    "variant_id": "2",
+    "type": "match",
+    "question": "",
+    "image_url": "math_images/topic_103/variant_2/8.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Д; 2-В; 3-Г"
+  },
+  {
+    "id": 141,
+    "topic_id": "103",
+    "variant_id": "2",
+    "type": "match",
+    "question": "",
+    "image_url": "math_images/topic_103/variant_2/9.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-В; 2-Б; 3-Д"
+  },
+  {
+    "id": 142,
+    "topic_id": "103",
+    "variant_id": "2",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_103/variant_2/10.png",
+    "options": [],
+    "answer": "-4"
+  },
+  {
+    "id": 143,
+    "topic_id": "103",
+    "variant_id": "2",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_103/variant_2/11.png",
+    "options": [],
+    "answer": "-9"
+  },
+  {
+    "id": 144,
+    "topic_id": "103",
+    "variant_id": "2",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_103/variant_2/12.png",
+    "options": [],
+    "answer": "-3,5"
+  },
+  {
+    "id": 145,
+    "topic_id": "103",
+    "variant_id": "3",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_103/variant_3/1.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "В"
+  },
+  {
+    "id": 146,
+    "topic_id": "103",
+    "variant_id": "3",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_103/variant_3/2.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Д"
+  },
+  {
+    "id": 147,
+    "topic_id": "103",
+    "variant_id": "3",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_103/variant_3/3.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "В"
+  },
+  {
+    "id": 148,
+    "topic_id": "103",
+    "variant_id": "3",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_103/variant_3/4.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Д"
+  },
+  {
+    "id": 149,
+    "topic_id": "103",
+    "variant_id": "3",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_103/variant_3/5.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "В"
+  },
+  {
+    "id": 150,
+    "topic_id": "103",
+    "variant_id": "3",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_103/variant_3/6.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Г"
+  },
+  {
+    "id": 151,
+    "topic_id": "103",
+    "variant_id": "3",
+    "type": "match",
+    "question": "Увідповідніть функцію (1-3) із кількістю (А - Д) спільних точок її графіка з прямою у= х.",
+    "image_url": "math_images/topic_103/variant_3/7.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-В; 2-Г; 3-А"
+  },
+  {
+    "id": 152,
+    "topic_id": "103",
+    "variant_id": "3",
+    "type": "match",
+    "question": "До кожної функції (1–3) доберіть властивість її графіка (А–Д).",
+    "image_url": "math_images/topic_103/variant_3/8.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-А; 2-В; 3-Б"
+  },
+  {
+    "id": 153,
+    "topic_id": "103",
+    "variant_id": "3",
+    "type": "match",
+    "question": "Установіть відповідність між твердженням (1-3) та прямою, зображеною на рисунку (А - Д), для якої це твердження е правильним.",
+    "image_url": "math_images/topic_103/variant_3/9.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-В; 2-Д; 3-Г"
+  },
+  {
+    "id": 154,
+    "topic_id": "103",
+    "variant_id": "3",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_103/variant_3/10.png",
+    "options": [],
+    "answer": "4"
+  },
+  {
+    "id": 155,
+    "topic_id": "103",
+    "variant_id": "3",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_103/variant_3/11.png",
+    "options": [],
+    "answer": "-12,5"
+  },
+  {
+    "id": 156,
+    "topic_id": "103",
+    "variant_id": "3",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_103/variant_3/12.png",
+    "options": [],
+    "answer": "5,1"
+  },
+  {
+    "id": 157,
+    "topic_id": "103",
+    "variant_id": "4",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_103/variant_4/1.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Г"
+  },
+  {
+    "id": 158,
+    "topic_id": "103",
+    "variant_id": "4",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_103/variant_4/2.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "В"
+  },
+  {
+    "id": 159,
+    "topic_id": "103",
+    "variant_id": "4",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_103/variant_4/3.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "В"
+  },
+  {
+    "id": 160,
+    "topic_id": "103",
+    "variant_id": "4",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_103/variant_4/4.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "В"
+  },
+  {
+    "id": 161,
+    "topic_id": "103",
+    "variant_id": "4",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_103/variant_4/5.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "А"
+  },
+  {
+    "id": 162,
+    "topic_id": "103",
+    "variant_id": "4",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_103/variant_4/6.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Г"
+  },
+  {
+    "id": 163,
+    "topic_id": "103",
+    "variant_id": "4",
+    "type": "match",
+    "question": "Установіть відповідність між функцією (1–3) та її властивістю (А–Д).",
+    "image_url": "math_images/topic_103/variant_4/7.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Б; 2-Д; 3-В"
+  },
+  {
+    "id": 164,
+    "topic_id": "103",
+    "variant_id": "4",
+    "type": "match",
+    "question": "Установіть відповідність між твердженням (1–3) та функцією (А–Д), для якої це твердження є правильним.",
+    "image_url": "math_images/topic_103/variant_4/8.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Д; 2-В; 3-Б"
+  },
+  {
+    "id": 165,
+    "topic_id": "103",
+    "variant_id": "4",
+    "type": "match",
+    "question": "Узгодьте функцію (1–3) із кількістю (А–Д) спільних точок її графіка з прямою y = -x",
+    "image_url": "math_images/topic_103/variant_4/9.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Г; 2-А; 3-Б"
+  },
+  {
+    "id": 166,
+    "topic_id": "103",
+    "variant_id": "4",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_103/variant_4/10.png",
+    "options": [],
+    "answer": "15"
+  },
+  {
+    "id": 167,
+    "topic_id": "103",
+    "variant_id": "4",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_103/variant_4/11.png",
+    "options": [],
+    "answer": "6,5"
+  },
+  {
+    "id": 168,
+    "topic_id": "103",
+    "variant_id": "4",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_103/variant_4/12.png",
+    "options": [],
+    "answer": "17,5"
+  },
+  {
+    "id": 169,
+    "topic_id": "103",
+    "variant_id": "5",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_103/variant_5/1.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Б"
+  },
+  {
+    "id": 170,
+    "topic_id": "103",
+    "variant_id": "5",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_103/variant_5/2.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Б"
+  },
+  {
+    "id": 171,
+    "topic_id": "103",
+    "variant_id": "5",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_103/variant_5/3.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Г"
+  },
+  {
+    "id": 172,
+    "topic_id": "103",
+    "variant_id": "5",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_103/variant_5/4.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Г"
+  },
+  {
+    "id": 173,
+    "topic_id": "103",
+    "variant_id": "5",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_103/variant_5/5.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "А"
+  },
+  {
+    "id": 174,
+    "topic_id": "103",
+    "variant_id": "5",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_103/variant_5/6.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Г"
+  },
+  {
+    "id": 175,
+    "topic_id": "103",
+    "variant_id": "5",
+    "type": "match",
+    "question": "Для кожного початку речення (1–3) доберіть його закінчення (А–Д) так, щоб утворилося правильне твердження.",
+    "image_url": "math_images/topic_103/variant_5/7.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Г; 2-А; 3-Б"
+  },
+  {
+    "id": 176,
+    "topic_id": "103",
+    "variant_id": "5",
+    "type": "match",
+    "question": "Доберіть до початку речення (1–3) його закінчення (А–Д) так, щоб утворилося правильне твердження.",
+    "image_url": "math_images/topic_103/variant_5/8.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Б; 2-В; 3-А"
+  },
+  {
+    "id": 177,
+    "topic_id": "103",
+    "variant_id": "5",
+    "type": "match",
+    "question": "Узгодьте функцію (1–3) із її властивістю (А–Д).",
+    "image_url": "math_images/topic_103/variant_5/9.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Д; 2-Б; 3-А"
+  },
+  {
+    "id": 178,
+    "topic_id": "103",
+    "variant_id": "5",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_103/variant_5/10.png",
+    "options": [],
+    "answer": "-4,5"
+  },
+  {
+    "id": 179,
+    "topic_id": "103",
+    "variant_id": "5",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_103/variant_5/11.png",
+    "options": [],
+    "answer": "-13,6"
+  },
+  {
+    "id": 180,
+    "topic_id": "103",
+    "variant_id": "5",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_103/variant_5/12.png",
+    "options": [],
+    "answer": "12"
+  },
+  {
+    "id": 181,
+    "topic_id": "104",
+    "variant_id": "1",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_104/variant_1/1.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Г"
+  },
+  {
+    "id": 182,
+    "topic_id": "104",
+    "variant_id": "1",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_104/variant_1/2.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Д"
+  },
+  {
+    "id": 183,
+    "topic_id": "104",
+    "variant_id": "1",
+    "type": "multiple",
+    "question": "На вершину гори ведуть 5 доріг. Скільки всього є варіантів вибору маршруту підйому на вершину гори однією дорогою, а спуску – іншою?",
+    "image_url": "",
+    "options": [
+      "А 5",
+      "Б 9",
+      "В 10",
+      "Г 20",
+      "Д 25"
+    ],
+    "answer": "Г"
+  },
+  {
+    "id": 184,
+    "topic_id": "104",
+    "variant_id": "1",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_104/variant_1/3.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "В"
+  },
+  {
+    "id": 185,
+    "topic_id": "104",
+    "variant_id": "1",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_104/variant_1/4.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Д"
+  },
+  {
+    "id": 186,
+    "topic_id": "104",
+    "variant_id": "1",
+    "type": "multiple",
+    "question": "Скільки існує трицифрових чисел, усі цифри яких непарні та різні?",
+    "image_url": "",
+    "options": [
+      "А 120",
+      "Б 240",
+      "В 60",
+      "Г 200",
+      "Д 57"
+    ],
+    "answer": "В"
+  },
+  {
+    "id": 187,
+    "topic_id": "104",
+    "variant_id": "1",
+    "type": "match",
+    "question": "",
+    "image_url": "math_images/topic_104/variant_1/5.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Д; 2-Г; 3-Б"
+  },
+  {
+    "id": 188,
+    "topic_id": "104",
+    "variant_id": "1",
+    "type": "match",
+    "question": "",
+    "image_url": "math_images/topic_104/variant_1/6.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Д; 2-В; 3-А"
+  },
+  {
+    "id": 189,
+    "topic_id": "104",
+    "variant_id": "1",
+    "type": "match",
+    "question": "",
+    "image_url": "math_images/topic_104/variant_1/7.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Д; 2-Г; 3-А"
+  },
+  {
+    "id": 190,
+    "topic_id": "104",
+    "variant_id": "1",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_104/variant_1/8.png",
+    "options": [],
+    "answer": "20"
+  },
+  {
+    "id": 191,
+    "topic_id": "104",
+    "variant_id": "1",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_104/variant_1/9.png",
+    "options": [],
+    "answer": "20"
+  },
+  {
+    "id": 192,
+    "topic_id": "104",
+    "variant_id": "1",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_104/variant_1/10.png",
+    "options": [],
+    "answer": "42"
+  },
+  {
+    "id": 193,
+    "topic_id": "104",
+    "variant_id": "2",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_104/variant_2/1.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "В"
+  },
+  {
+    "id": 194,
+    "topic_id": "104",
+    "variant_id": "2",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_104/variant_2/2.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "А"
+  },
+  {
+    "id": 195,
+    "topic_id": "104",
+    "variant_id": "2",
+    "type": "multiple",
+    "question": "Студент на першому курсі повинен вибрати одну з трьох іноземних мов, яку вивчатиме, та одну з п'яти спортивних секцій, що відвідуватиме. Скільки всього існує варіантів вибору студентом іноземної мови та спортивної секції?",
+    "image_url": "",
+    "options": [
+      "А 5",
+      "Б 8",
+      "В 10",
+      "Г 15",
+      "Д 28"
+    ],
+    "answer": "Г"
+  },
+  {
+    "id": 196,
+    "topic_id": "104",
+    "variant_id": "2",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_104/variant_2/3.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "В"
+  },
+  {
+    "id": 197,
+    "topic_id": "104",
+    "variant_id": "2",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_104/variant_2/4.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Д"
+  },
+  {
+    "id": 198,
+    "topic_id": "104",
+    "variant_id": "2",
+    "type": "multiple",
+    "question": "До складу української Прем'єр-ліги з футболу входять 16 команд. Упродовж сезону кожні дві команди грають між собою 2 матчі. Скільки всього матчів буде зіграно за сезон?",
+    "image_url": "",
+    "options": [
+      "А 120",
+      "Б 128",
+      "В 200",
+      "Г 240",
+      "Д 256"
+    ],
+    "answer": "Г"
+  },
+  {
+    "id": 199,
+    "topic_id": "104",
+    "variant_id": "2",
+    "type": "match",
+    "question": "",
+    "image_url": "math_images/topic_104/variant_2/5.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Д; 2-Г; 3-А"
+  },
+  {
+    "id": 200,
+    "topic_id": "104",
+    "variant_id": "2",
+    "type": "match",
+    "question": "",
+    "image_url": "math_images/topic_104/variant_2/6.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Д; 2-А; 3-Г"
+  },
+  {
+    "id": 201,
+    "topic_id": "104",
+    "variant_id": "2",
+    "type": "match",
+    "question": "",
+    "image_url": "math_images/topic_104/variant_2/7.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Д; 2-Б; 3-В"
+  },
+  {
+    "id": 202,
+    "topic_id": "104",
+    "variant_id": "2",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_104/variant_2/8.png",
+    "options": [],
+    "answer": "144"
+  },
+  {
+    "id": 203,
+    "topic_id": "104",
+    "variant_id": "2",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_104/variant_2/9.png",
+    "options": [],
+    "answer": "1800"
+  },
+  {
+    "id": 204,
+    "topic_id": "104",
+    "variant_id": "2",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_104/variant_2/10.png",
+    "options": [],
+    "answer": "500"
+  },
+  {
+    "id": 205,
+    "topic_id": "104",
+    "variant_id": "3",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_104/variant_3/1.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "В"
+  },
+  {
+    "id": 207,
+    "topic_id": "104",
+    "variant_id": "3",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_104/variant_3/2.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Д"
+  },
+  {
+    "id": 208,
+    "topic_id": "104",
+    "variant_id": "3",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_104/variant_3/3.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Б"
+  },
+  {
+    "id": 209,
+    "topic_id": "104",
+    "variant_id": "3",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_104/variant_3/4.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "А"
+  },
+  {
+    "id": 209,
+    "topic_id": "104",
+    "variant_id": "3",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_104/variant_3/5.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Б"
+  },
+  {
+    "id": 210,
+    "topic_id": "104",
+    "variant_id": "3",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_104/variant_3/6.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "А"
+  },
+  {
+    "id": 211,
+    "topic_id": "104",
+    "variant_id": "3",
+    "type": "match",
+    "question": "",
+    "image_url": "math_images/topic_104/variant_3/7.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Г; 2-А; 3-В"
+  },
+  {
+    "id": 212,
+    "topic_id": "104",
+    "variant_id": "3",
+    "type": "match",
+    "question": "",
+    "image_url": "math_images/topic_104/variant_3/8.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-А; 2-Б; 3-Д"
+  },
+  {
+    "id": 213,
+    "topic_id": "104",
+    "variant_id": "3",
+    "type": "match",
+    "question": "",
+    "image_url": "math_images/topic_104/variant_3/9.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Г; 2-А; 3-Б"
+  },
+  {
+    "id": 214,
+    "topic_id": "104",
+    "variant_id": "3",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_104/variant_3/10.png",
+    "options": [],
+    "answer": "384"
+  },
+  {
+    "id": 215,
+    "topic_id": "104",
+    "variant_id": "3",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_104/variant_3/11.png",
+    "options": [],
+    "answer": "0,65"
+  },
+  {
+    "id": 215,
+    "topic_id": "104",
+    "variant_id": "3",
+    "type": "manual",
+    "question": "Олег пише смс-повідомлення з трьох речень. У кінці кожного з них він прикріпить один із п’ятнадцяти веселих смайликів. Скільки всього є способів вибору таких смайликів для прикріплення, якщо всі смайлики в повідомленні мають бути різними?",
+    "image_url": "",
+    "options": [],
+    "answer": "2730"
+  },
+  {
+    "id": 216,
+    "topic_id": "104",
+    "variant_id": "4",
+    "type": "multiple",
+    "question": "Задано цифри 2; 3; 4; 5; 6. Знайдіть кількість непарних п’ятицифрових чисел, які можна скласти із цих цифр, використовуючи кожну цифру тільки один раз.",
+    "image_url": "",
+    "options": [
+      "А 24",
+      "Б 48",
+      "В 72",
+      "Г 120",
+      "Д 240"
+    ],
+    "answer": "Б"
+  },
+  {
+    "id": 217,
+    "topic_id": "104",
+    "variant_id": "4",
+    "type": "multiple",
+    "question": "Скількома способами можна вибрати 2 блокноти і 3 ручки з 5 різних блокнотів і 8 різних ручок?",
+    "image_url": "",
+    "options": [
+      "А 240",
+      "Б 560",
+      "В 720",
+      "Г 490",
+      "Д 370"
+    ],
+    "answer": "Б"
+  },
+  {
+    "id": 218,
+    "topic_id": "104",
+    "variant_id": "4",
+    "type": "multiple",
+    "question": "У футбольній команді з 11 гравців треба обрати капітана та його заступника. Скількома способами можна це зробити?",
+    "image_url": "",
+    "options": [
+      "А 110",
+      "Б 11!",
+      "В 121",
+      "Г 200",
+      "Д 570"
+    ],
+    "answer": "А"
+  },
+  {
+    "id": 219,
+    "topic_id": "104",
+    "variant_id": "4",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_104/variant_4/1.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Д"
+  },
+  {
+    "id": 220,
+    "topic_id": "104",
+    "variant_id": "4",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_104/variant_4/2.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Г"
+  },
+  {
+    "id": 221,
+    "topic_id": "104",
+    "variant_id": "4",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_104/variant_4/3.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Г"
+  },
+  {
+    "id": 222,
+    "topic_id": "104",
+    "variant_id": "4",
+    "type": "match",
+    "question": "",
+    "image_url": "math_images/topic_104/variant_4/4.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Д; 2-В; 3-А"
+  },
+  {
+    "id": 223,
+    "topic_id": "104",
+    "variant_id": "4",
+    "type": "match",
+    "question": "Дано вибірку: 𝟐, 𝟓, 𝟑, 𝟐, 𝟕, 𝟏𝟎, 𝟒. Установіть відповідність між характеристикою вибірки (1-4) та її значенням (А-Д)<br>Характеристика:<br>1. Мода,<br> 2. Медіана,<br> 3. Розмах",
+    "image_url": "",
+    "options": [
+      "А 3",
+      "Б 4",
+      "В 4,7",
+      "Г 2",
+      "Д 8"
+    ],
+    "answer": "1-Г; 2-Б; 3-Д"
+  },
+  {
+    "id": 224,
+    "topic_id": "104",
+    "variant_id": "4",
+    "type": "match",
+    "question": "",
+    "image_url": "math_images/topic_104/variant_4/5.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-А; 2-Б; 3-В"
+  },
+  {
+    "id": 225,
+    "topic_id": "104",
+    "variant_id": "4",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_104/variant_4/6.png",
+    "options": [],
+    "answer": "5"
+  },
+  {
+    "id": 226,
+    "topic_id": "104",
+    "variant_id": "4",
+    "type": "manual",
+    "question": "Михайло отримав з математики в першому семестрі такі оцінки: «8», «7», «9», «8». Яку кількість оцінок «10» протягом цього семестру треба отримати Михайлові з математики, щоб середнє арифметичне всіх отриманих у першому семестрі оцінок із цього предмета дорівнювало 9,5? Уважайте, що інших оцінок із математики, окрім «10», Михайло не отримуватиме.",
+    "image_url": "",
+    "options": [],
+    "answer": "12"
+  },
+  {
+    "id": 227,
+    "topic_id": "104",
+    "variant_id": "4",
+    "type": "manual",
+    "question": "Редактор стрічки новин вирішує, у якій послідовності розмістити 6 різни новин: 2 політичні, 3 суспільні й 1 спортивну. Скільки всього є різних послідовностей розміщення цих 6 новин у стрічці за умови, що політичні новини мають передувати іншим, а спортивна новина – бути останньою? Уважайте, що кожну із цих 6 новин у стрічці не повторюють.",
+    "image_url": "",
+    "options": [],
+    "answer": "12"
+  },
+  {
+    "id": 228,
+    "topic_id": "104",
+    "variant_id": "5",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_104/variant_5/1.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Б"
+  },
+  {
+    "id": 229,
+    "topic_id": "104",
+    "variant_id": "5",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_104/variant_5/2.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "А"
+  },
+  {
+    "id": 230,
+    "topic_id": "104",
+    "variant_id": "5",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_104/variant_5/3.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Г"
+  },
+  {
+    "id": 231,
+    "topic_id": "104",
+    "variant_id": "5",
+    "type": "multiple",
+    "question": "Туристична група складається з 16 осіб. Скількома способами з них можна сформувати групу з 3 туристів для екскурсії?",
+    "image_url": "",
+    "options": [
+      "А 2400",
+      "Б 7200",
+      "В 1200",
+      "Г 560",
+      "Д 380"
+    ],
+    "answer": "Г"
+  },
+  {
+    "id": 232,
+    "topic_id": "104",
+    "variant_id": "5",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_104/variant_5/4.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "В"
+  },
+  {
+    "id": 233,
+    "topic_id": "104",
+    "variant_id": "5",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_104/variant_5/5.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "В"
+  },
+  {
+    "id": 234,
+    "topic_id": "104",
+    "variant_id": "5",
+    "type": "match",
+    "question": "",
+    "image_url": "math_images/topic_104/variant_5/6.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-В; 2-А; 3-Б"
+  },
+  {
+    "id": 235,
+    "topic_id": "104",
+    "variant_id": "5",
+    "type": "match",
+    "question": "Установіть відповідність між центральною тенденцією вибірки (1-3) та її значенням (А-Г): <br>1. Середнє значення вибірки: 12; 17; 11; 13; 14; 15; 15; 16; 13; 13<br>2. Мода вибірки: 12; 17; 11; 13; 14; 15; 15; 16; 13; 13<br>3. Медіана вибірки: 12; 17; 11; 13; 14; 15; 15; 16, 13, 13",
+    "image_url": "",
+    "options": [
+      "А 13",
+      "Б 13,5",
+      "В 13,7",
+      "Г 13,9",
+      "Д 13,2"
+    ],
+    "answer": "1-Г; 2-А; 3-Б"
+  },
+  {
+    "id": 236,
+    "topic_id": "104",
+    "variant_id": "5",
+    "type": "match",
+    "question": "З усіх натуральних чисел, більших за 9 і менших за 20, навмання вибирають одне число. Установіть відповідність між подією (1-4) та ймовірністю її появи (А-Д)",
+    "image_url": "math_images/topic_104/variant_5/7.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Г; 2-Д; 3-А"
+  },
+  {
+    "id": 237,
+    "topic_id": "104",
+    "variant_id": "5",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_104/variant_5/8.png",
+    "options": [],
+    "answer": "2520"
+  },
+  {
+    "id": 238,
+    "topic_id": "104",
+    "variant_id": "5",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_104/variant_5/9.png",
+    "options": [],
+    "answer": "21"
+  },
+  {
+    "id": 239,
+    "topic_id": "104",
+    "variant_id": "5",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_104/variant_5/10.png",
+    "options": [],
+    "answer": "25"
+  },
+  {
+    "id": 240,
+    "topic_id": "105",
+    "variant_id": "1",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_1/1.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "В"
+  },
+  {
+    "id": 241,
+    "topic_id": "105",
+    "variant_id": "1",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_1/2.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Б"
+  },
+  {
+    "id": 242,
+    "topic_id": "105",
+    "variant_id": "1",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_1/3.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Г"
+  },
+  {
+    "id": 243,
+    "topic_id": "105",
+    "variant_id": "1",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_1/4.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Б"
+  },
+  {
+    "id": 244,
+    "topic_id": "105",
+    "variant_id": "1",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_1/5.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Г"
+  },
+  {
+    "id": 245,
+    "topic_id": "105",
+    "variant_id": "1",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_1/6.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "А"
+  },
+  {
+    "id": 246,
+    "topic_id": "105",
+    "variant_id": "1",
+    "type": "match",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_1/7.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-В; 2-Д; 3-Г"
+  },
+  {
+    "id": 247,
+    "topic_id": "105",
+    "variant_id": "1",
+    "type": "match",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_1/8.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-В; 2-А; 3-Г"
+  },
+  {
+    "id": 248,
+    "topic_id": "105",
+    "variant_id": "1",
+    "type": "match",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_1/9.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-А; 2-Д; 3-Б"
+  },
+  {
+    "id": 249,
+    "topic_id": "105",
+    "variant_id": "1",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_1/10.png",
+    "options": [],
+    "answer": "672"
+  },
+  {
+    "id": 250,
+    "topic_id": "105",
+    "variant_id": "1",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_1/11.png",
+    "options": [],
+    "answer": "30"
+  },
+  {
+    "id": 251,
+    "topic_id": "105",
+    "variant_id": "1",
+    "type": "manual",
+    "question": "Одна зі сторін трикутника дорівнює 7 см, кут між двома іншими сторонами - 60 градусів, а їх різниця дорівнює 5 см. Знайдіть (у см) периметр трикутника.",
+    "image_url": "",
+    "options": [],
+    "answer": "18"
+  },
+  {
+    "id": 252,
+    "topic_id": "105",
+    "variant_id": "2",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_2/1.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "В"
+  },
+  {
+    "id": 253,
+    "topic_id": "105",
+    "variant_id": "2",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_2/2.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "А"
+  },
+  {
+    "id": 254,
+    "topic_id": "105",
+    "variant_id": "2",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_3/3.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Д"
+  },
+  {
+    "id": 255,
+    "topic_id": "105",
+    "variant_id": "2",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_2/4.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Д"
+  },
+  {
+    "id": 256,
+    "topic_id": "105",
+    "variant_id": "2",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_2/5.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "В"
+  },
+  {
+    "id": 257,
+    "topic_id": "105",
+    "variant_id": "2",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_2/6.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Б"
+  },
+  {
+    "id": 258,
+    "topic_id": "105",
+    "variant_id": "2",
+    "type": "match",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_2/7.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-А; 2-Б; 3-В"
+  },
+  {
+    "id": 259,
+    "topic_id": "105",
+    "variant_id": "2",
+    "type": "match",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_2/8.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Г; 2-Б; 3-Д"
+  },
+  {
+    "id": 260,
+    "topic_id": "105",
+    "variant_id": "2",
+    "type": "match",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_2/9.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-А; 2-В; 3-Г"
+  },
+  {
+    "id": 261,
+    "topic_id": "105",
+    "variant_id": "2",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_2/10.png",
+    "options": [],
+    "answer": "96"
+  },
+  {
+    "id": 262,
+    "topic_id": "105",
+    "variant_id": "2",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_2/11.png",
+    "options": [],
+    "answer": "40"
+  },
+  {
+    "id": 263,
+    "topic_id": "105",
+    "variant_id": "2",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_2/12.png",
+    "options": [],
+    "answer": "24"
+  },
+  {
+    "id": 264,
+    "topic_id": "105",
+    "variant_id": "3",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_3/1.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Г"
+  },
+  {
+    "id": 265,
+    "topic_id": "105",
+    "variant_id": "3",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_3/2.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Б"
+  },
+  {
+    "id": 266,
+    "topic_id": "105",
+    "variant_id": "3",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_3/3.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "В"
+  },
+  {
+    "id": 267,
+    "topic_id": "105",
+    "variant_id": "3",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_3/4.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "В"
+  },
+  {
+    "id": 268,
+    "topic_id": "105",
+    "variant_id": "3",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_3/5.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "В"
+  },
+  {
+    "id": 269,
+    "topic_id": "105",
+    "variant_id": "3",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_3/6.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Г"
+  },
+  {
+    "id": 270,
+    "topic_id": "105",
+    "variant_id": "3",
+    "type": "match",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_3/7.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Г; 2-Б; 3-Д"
+  },
+  {
+    "id": 271,
+    "topic_id": "105",
+    "variant_id": "3",
+    "type": "match",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_3/8.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Г; 2-А; 3-Б"
+  },
+  {
+    "id": 272,
+    "topic_id": "105",
+    "variant_id": "3",
+    "type": "match",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_3/9.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Д; 2-А; 3-В"
+  },
+  {
+    "id": 273,
+    "topic_id": "105",
+    "variant_id": "3",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_3/10.png",
+    "options": [],
+    "answer": "14"
+  },
+  {
+    "id": 274,
+    "topic_id": "105",
+    "variant_id": "3",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_3/11.png",
+    "options": [],
+    "answer": "58"
+  },
+  {
+    "id": 275,
+    "topic_id": "105",
+    "variant_id": "3",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_3/12.png",
+    "options": [],
+    "answer": "336"
+  },
+  {
+    "id": 276,
+    "topic_id": "105",
+    "variant_id": "4",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_4/1.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "А"
+  },
+  {
+    "id": 277,
+    "topic_id": "105",
+    "variant_id": "4",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_4/2.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "А"
+  },
+  {
+    "id": 278,
+    "topic_id": "105",
+    "variant_id": "4",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_4/3.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "В"
+  },
+  {
+    "id": 279,
+    "topic_id": "105",
+    "variant_id": "4",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_4/4.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Д"
+  },
+  {
+    "id": 280,
+    "topic_id": "105",
+    "variant_id": "4",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_4/5.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "А"
+  },
+  {
+    "id": 281,
+    "topic_id": "105",
+    "variant_id": "4",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_4/6.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Б"
+  },
+  {
+    "id": 282,
+    "topic_id": "105",
+    "variant_id": "4",
+    "type": "match",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_4/7.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Г; 2-А; 3-В"
+  },
+  {
+    "id": 283,
+    "topic_id": "105",
+    "variant_id": "4",
+    "type": "match",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_4/8.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-В; 2-Д; 3-Г"
+  },
+  {
+    "id": 284,
+    "topic_id": "105",
+    "variant_id": "4",
+    "type": "match",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_4/9.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Г; 2-А; 3-В"
+  },
+  {
+    "id": 285,
+    "topic_id": "105",
+    "variant_id": "4",
+    "type": "manual",
+    "question": "Діагональ рівнобічної трапеції перпендикулярна до бічної сторони. Висота трапеції, проведена з вершини тупого кута трапеції, ділить більшу основу на відрізки 2 см і 8 см. Знайдіть площу трапеції (у см2)",
+    "image_url": "",
+    "options": [],
+    "answer": "32"
+  },
+  {
+    "id": 286,
+    "topic_id": "105",
+    "variant_id": "4",
+    "type": "manual",
+    "question": "Кути ромба відносяться як 1:2, а його менша діагональ дорівнює 8 см. Знайдіть (у см) периметр ромба.",
+    "image_url": "",
+    "options": [],
+    "answer": "32"
+  },
+  {
+    "id": 287,
+    "topic_id": "105",
+    "variant_id": "4",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_4/10.png",
+    "options": [],
+    "answer": "120"
+  },
+  {
+    "id": 288,
+    "topic_id": "105",
+    "variant_id": "5",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_5/1.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Г"
+  },
+  {
+    "id": 289,
+    "topic_id": "105",
+    "variant_id": "5",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_5/2.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "В"
+  },
+  {
+    "id": 290,
+    "topic_id": "105",
+    "variant_id": "5",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_5/3.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Б"
+  },
+  {
+    "id": 291,
+    "topic_id": "105",
+    "variant_id": "5",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_5/4.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Г"
+  },
+  {
+    "id": 292,
+    "topic_id": "105",
+    "variant_id": "5",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_5/5.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Г"
+  },
+  {
+    "id": 293,
+    "topic_id": "105",
+    "variant_id": "5",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_5/6.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Д"
+  },
+  {
+    "id": 294,
+    "topic_id": "105",
+    "variant_id": "5",
+    "type": "match",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_5/7.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Д; 2-Б; 3-В"
+  },
+  {
+    "id": 295,
+    "topic_id": "105",
+    "variant_id": "5",
+    "type": "match",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_5/8.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Г; 2-В; 3-Б"
+  },
+  {
+    "id": 296,
+    "topic_id": "105",
+    "variant_id": "5",
+    "type": "match",
+    "question": "",
+    "image_url": "math_images/topic_105/variant_5/9.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Д; 2-В; 3-Г"
+  },
+  {
+    "id": 297,
+    "topic_id": "105",
+    "variant_id": "5",
+    "type": "manual",
+    "question": "Периметр прямокутного трикутника дорівнює 30 см, а один з його катетів – 12 см. Знайдіть (у см) гіпотенузу трикутника.",
+    "image_url": "",
+    "options": [],
+    "answer": "13"
+  },
+  {
+    "id": 298,
+    "topic_id": "105",
+    "variant_id": "5",
+    "type": "manual",
+    "question": "У рівнобічній трапеції діагоналі взаємно перпендикулярні. Обчисліть площу трапеції, якщо її середня лінія дорівнює 6.",
+    "image_url": "",
+    "options": [],
+    "answer": "36"
+  },
+  {
+    "id": 299,
+    "topic_id": "105",
+    "variant_id": "5",
+    "type": "manual",
+    "question": "Периметр паралелограма дорівнює 90. Обчисліть площу паралелограма, якщо його висоти дорівнюють 9 і 18.",
+    "image_url": "",
+    "options": [],
+    "answer": "270"
+  },
+  {
+    "id": 300,
+    "topic_id": "106",
+    "variant_id": "1",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_1/1.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Б"
+  },
+  {
+    "id": 301,
+    "topic_id": "106",
+    "variant_id": "1",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_1/2.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Д"
+  },
+  {
+    "id": 302,
+    "topic_id": "106",
+    "variant_id": "1",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_1/3.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Б"
+  },
+  {
+    "id": 303,
+    "topic_id": "106",
+    "variant_id": "1",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_1/4.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Г"
+  },
+  {
+    "id": 304,
+    "topic_id": "106",
+    "variant_id": "1",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_1/5.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "А"
+  },
+  {
+    "id": 305,
+    "topic_id": "106",
+    "variant_id": "1",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_1/6.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Г"
+  },
+  {
+    "id": 306,
+    "topic_id": "106",
+    "variant_id": "1",
+    "type": "match",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_1/7.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Д; 2-А; 3-В"
+  },
+  {
+    "id": 307,
+    "topic_id": "106",
+    "variant_id": "1",
+    "type": "match",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_1/8.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Б; 2-А; 3-Д"
+  },
+  {
+    "id": 308,
+    "topic_id": "106",
+    "variant_id": "1",
+    "type": "match",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_1/9.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Б; 2-Г; 3-Д"
+  },
+  {
+    "id": 309,
+    "topic_id": "106",
+    "variant_id": "1",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_1/10.png",
+    "options": [],
+    "answer": "48"
+  },
+  {
+    "id": 310,
+    "topic_id": "106",
+    "variant_id": "1",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_1/11.png",
+    "options": [],
+    "answer": "180"
+  },
+  {
+    "id": 311,
+    "topic_id": "106",
+    "variant_id": "1",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_1/12.png",
+    "options": [],
+    "answer": "324"
+  },
+  {
+    "id": 312,
+    "topic_id": "106",
+    "variant_id": "2",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_2/1.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "А"
+  },
+  {
+    "id": 313,
+    "topic_id": "106",
+    "variant_id": "2",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_2/2.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Г"
+  },
+  {
+    "id": 314,
+    "topic_id": "106",
+    "variant_id": "2",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_2/3.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "А"
+  },
+  {
+    "id": 315,
+    "topic_id": "106",
+    "variant_id": "2",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_2/4.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "А"
+  },
+  {
+    "id": 316,
+    "topic_id": "106",
+    "variant_id": "2",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_2/5.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Г"
+  },
+  {
+    "id": 317,
+    "topic_id": "106",
+    "variant_id": "2",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_2/6.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Б"
+  },
+  {
+    "id": 318,
+    "topic_id": "106",
+    "variant_id": "2",
+    "type": "match",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_2/7.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-А; 2-Д; 3-В"
+  },
+  {
+    "id": 319,
+    "topic_id": "106",
+    "variant_id": "2",
+    "type": "match",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_2/8.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Г; 2-Б; 3-А"
+  },
+  {
+    "id": 320,
+    "topic_id": "106",
+    "variant_id": "2",
+    "type": "match",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_2/9.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Б; 2-А; 3-Г"
+  },
+  {
+    "id": 321,
+    "topic_id": "106",
+    "variant_id": "2",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_2/10.png",
+    "options": [],
+    "answer": "4"
+  },
+  {
+    "id": 322,
+    "topic_id": "106",
+    "variant_id": "2",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_2/11.png",
+    "options": [],
+    "answer": "144"
+  },
+  {
+    "id": 323,
+    "topic_id": "106",
+    "variant_id": "2",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_2/12.png",
+    "options": [],
+    "answer": "64"
+  },
+  {
+    "id": 324,
+    "topic_id": "106",
+    "variant_id": "3",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_3/1.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Г"
+  },
+  {
+    "id": 325,
+    "topic_id": "106",
+    "variant_id": "3",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_3/2.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "А"
+  },
+  {
+    "id": 326,
+    "topic_id": "106",
+    "variant_id": "3",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_3/3.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Г"
+  },
+  {
+    "id": 327,
+    "topic_id": "106",
+    "variant_id": "3",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_3/4.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Б"
+  },
+  {
+    "id": 328,
+    "topic_id": "106",
+    "variant_id": "3",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_3/5.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "А"
+  },
+  {
+    "id": 329,
+    "topic_id": "106",
+    "variant_id": "3",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_3/6.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Б"
+  },
+  {
+    "id": 330,
+    "topic_id": "106",
+    "variant_id": "3",
+    "type": "match",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_3/7.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Д; 2-В; 3-Б"
+  },
+  {
+    "id": 331,
+    "topic_id": "106",
+    "variant_id": "3",
+    "type": "match",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_3/8.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-В; 2-Б; 3-А"
+  },
+  {
+    "id": 332,
+    "topic_id": "106",
+    "variant_id": "3",
+    "type": "match",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_3/9.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-В; 2-Г; 3-А"
+  },
+  {
+    "id": 333,
+    "topic_id": "106",
+    "variant_id": "3",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_3/10.png",
+    "options": [],
+    "answer": "729"
+  },
+  {
+    "id": 334,
+    "topic_id": "106",
+    "variant_id": "3",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_3/11.png",
+    "options": [],
+    "answer": "2187"
+  },
+  {
+    "id": 335,
+    "topic_id": "106",
+    "variant_id": "3",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_3/12.png",
+    "options": [],
+    "answer": "920"
+  },
+  {
+    "id": 336,
+    "topic_id": "106",
+    "variant_id": "4",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_4/1.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Б"
+  },
+  {
+    "id": 337,
+    "topic_id": "106",
+    "variant_id": "4",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_4/2.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "В"
+  },
+  {
+    "id": 338,
+    "topic_id": "106",
+    "variant_id": "4",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_4/3.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Б"
+  },
+  {
+    "id": 339,
+    "topic_id": "106",
+    "variant_id": "4",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_4/4.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Д"
+  },
+  {
+    "id": 340,
+    "topic_id": "106",
+    "variant_id": "4",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_4/5.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "А"
+  },
+  {
+    "id": 341,
+    "topic_id": "106",
+    "variant_id": "4",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_4/6.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Д"
+  },
+  {
+    "id": 342,
+    "topic_id": "106",
+    "variant_id": "4",
+    "type": "match",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_4/7.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-В; 2-Г; 3-А"
+  },
+  {
+    "id": 343,
+    "topic_id": "106",
+    "variant_id": "4",
+    "type": "match",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_4/8.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Д; 2-Б; 3-А"
+  },
+  {
+    "id": 344,
+    "topic_id": "106",
+    "variant_id": "4",
+    "type": "match",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_4/9.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-В; 2-Б; 3-Д"
+  },
+  {
+    "id": 345,
+    "topic_id": "106",
+    "variant_id": "4",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_4/10.png",
+    "options": [],
+    "answer": "72"
+  },
+  {
+    "id": 346,
+    "topic_id": "106",
+    "variant_id": "4",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_4/11.png",
+    "options": [],
+    "answer": "108"
+  },
+  {
+    "id": 347,
+    "topic_id": "106",
+    "variant_id": "4",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_4/12.png",
+    "options": [],
+    "answer": "1152"
+  },
+  {
+    "id": 348,
+    "topic_id": "106",
+    "variant_id": "5",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_5/1.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Г"
+  },
+  {
+    "id": 349,
+    "topic_id": "106",
+    "variant_id": "5",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_5/2.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Г"
+  },
+  {
+    "id": 350,
+    "topic_id": "106",
+    "variant_id": "5",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_5/3.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Б"
+  },
+  {
+    "id": 351,
+    "topic_id": "106",
+    "variant_id": "5",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_5/4.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "А"
+  },
+  {
+    "id": 352,
+    "topic_id": "106",
+    "variant_id": "5",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_5/5.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Б"
+  },
+  {
+    "id": 353,
+    "topic_id": "106",
+    "variant_id": "5",
+    "type": "multiple",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_5/6.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "Д"
+  },
+  {
+    "id": 354,
+    "topic_id": "106",
+    "variant_id": "5",
+    "type": "match",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_5/7.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-А; 2-Г; 3-Б"
+  },
+  {
+    "id": 355,
+    "topic_id": "106",
+    "variant_id": "5",
+    "type": "match",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_5/8.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-Б; 2-Д; 3-А"
+  },
+  {
+    "id": 356,
+    "topic_id": "106",
+    "variant_id": "5",
+    "type": "match",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_5/9.png",
+    "options": [
+      "А",
+      "Б",
+      "В",
+      "Г",
+      "Д"
+    ],
+    "answer": "1-А; 2-Г; 3-В"
+  },
+  {
+    "id": 357,
+    "topic_id": "106",
+    "variant_id": "5",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_5/10.png",
+    "options": [],
+    "answer": "243"
+  },
+  {
+    "id": 358,
+    "topic_id": "106",
+    "variant_id": "5",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_5/11.png",
+    "options": [],
+    "answer": "400"
+  },
+  {
+    "id": 359,
+    "topic_id": "106",
+    "variant_id": "5",
+    "type": "manual",
+    "question": "",
+    "image_url": "math_images/topic_106/variant_5/12.png",
+    "options": [],
+    "answer": "1920"
+  }
+]

@@ -1,13 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
-
 .subject-map {
   position: relative;
-  width: 100vw;
-  flex: 1;         
-  min-height: 0;   
+  width: 100%;
+  height: calc(100vh - 84px);
+  min-height: 650px;
   overflow: hidden;
   background: #080c18;
-  
 }
 
 .stars-canvas {
@@ -15,6 +13,17 @@
   inset: 0;
   pointer-events: none;
   z-index: 0;
+}
+
+
+.net-canvas {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  cursor: grab;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .map-header {
@@ -47,13 +56,6 @@
   text-transform: uppercase;
 }
 
-.net-canvas {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  cursor: grab;
-  display: block;
-}
 
 .net-canvas:active {
   cursor: grabbing;
