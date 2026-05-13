@@ -1,0 +1,567 @@
+@import url('https://fonts.googleapis.com/css2?family=e-Ukraine:wght@400;500;700&display=swap');
+@import url("../Root/Root.css");
+
+
+.quizPage {
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    max-width:  1224px;
+    width: 100%;
+    margin-inline: auto;
+    padding: 3rem 1.25rem 5rem;
+}
+
+
+.progressBar {
+    background: #fff;
+    border: 3px solid var(--color-border);
+    padding: 16px 24px;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.progressLabel {
+    font-size: var(--text-semibase);
+    font-weight: 600;
+    color: var(--color-text-primary);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+    text-align: center;
+}
+
+.progressDots {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.progressDot {
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    border: 3px solid var(--color-border);
+    color: var(--color-text-primary);
+    font-size: var(--text-semibase);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.18s, transform 0.15s;
+    flex-shrink: 0;
+}
+
+.progressDot:hover {
+    transform: scale(1.1);
+}
+
+.dotActive {
+    background: var(--color-accent-light);
+    box-shadow: 0 2px 8px rgba(37,99,235,0.35);
+;
+}
+
+.dotCorrect {
+    background: #16a34a;
+    color: white;
+    border: none;
+}
+
+.dotWrong {
+    background: #dc2626;
+    color: white;
+    border: none;
+}
+
+/* ── Main content ── */
+.quizBody {
+    flex: 1;
+    max-width: 1240px;
+    width: 100%;
+    padding-top: 2rem;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+/* ── Question card ── */
+.questionCard {
+    border-radius: 6px;
+    height: max-content;
+    min-height: 36rem;
+
+    width: 100%;
+    max-width: 1224px;
+
+    margin-bottom: 24px;
+}
+
+.questionHeader {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.questionNum {
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    border: 3px solid var(--color-border);
+    color: var(--color-text-primary);
+    font-size: var(--text-small);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.questionBadge {
+    font-size: 0.78rem;
+
+    color: var(--color-text-primary);
+    background: var(--color-accent-light);
+    border-radius: 6px;
+    padding: 4px 10px;
+}
+
+.questionPoints {
+    margin-left: auto;
+    font-size: 0.78rem;
+    color: #7a8aaa;
+    font-weight: 500;
+}
+
+.questionText {
+    font-size: var(--text-base);
+    line-height: 1.65;
+    color: var(--color-text-primary);
+    margin: 0 0 20px;
+    white-space: pre-line;
+}
+
+.questionImage {
+    display: block;
+    max-width: 320px;
+    width: 100%;
+    border-radius: 10px;
+    margin: 0 auto 24px;
+    background: #e5e9f0;
+}
+
+/* ── Options ── */
+.optionsLabel {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #7a8aaa;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.optionsList {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.optionItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 14px 16px;
+    border-radius: 6px;
+    border: 3px solid var(--color-accent-light);
+    background: white;
+    font-size: var(--text-semibase);
+    color: var(--color-text-primary);
+    line-height: 1.5;
+    cursor: pointer;
+    transition: border-color 0.15s, background 0.15s;
+    text-align: left;
+    width: 100%;
+}
+
+.optionItem:hover:not(:disabled) {
+    border-color: var(--color-border);
+    background: #eff6ff;
+}
+
+.optionItem:disabled {
+    cursor: default;
+}
+
+.optionCorrect {
+    border-color: #16a34a !important;
+    background: #f0fdf4 !important;
+    color: #14532d !important;
+}
+
+.optionWrong {
+    border-color: #dc2626 !important;
+    background: #fef2f2 !important;
+    color: #7f1d1d !important;
+}
+
+.optionLetter {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 7px;
+    background: #e5e9f0;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #1a2e4a;
+    flex-shrink: 0;
+    transition: background 0.15s, color 0.15s;
+}
+
+.optionCorrect .optionLetter {
+    background: #16a34a;
+    color: #fff;
+}
+
+.optionWrong .optionLetter {
+    background: #dc2626;
+    color: #fff;
+}
+
+/* ── Answer selector (letter buttons) ── */
+.answerSelector {
+    border-top: 1.5px solid #e5e9f0;
+    padding-top: 18px;
+    margin-top: 4px;
+}
+
+.answerLabel {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #7a8aaa;
+    margin-bottom: 10px;
+}
+
+.answerButtons {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+}
+
+.answerBtn {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    border: 1.5px solid #e5e9f0;
+    background: #f5f7fa;
+    font-size: var(--text-base);
+
+    color: #1a2e4a;
+    cursor: pointer;
+    transition: all 0.15s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.answerBtn:hover:not(:disabled) {
+    border-color: #2563eb;
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+.answerSelected {
+    background: #1a2e4a;
+    color: #fff;
+    border-color: #1a2e4a;
+}
+
+.answerCorrect {
+    background: #16a34a;
+    color: #fff;
+    border-color: #16a34a;
+}
+
+.answerWrong {
+    background: #dc2626;
+    color: #fff;
+    border-color: #dc2626;
+}
+
+/* ── Explain button ── */
+.explainBtn {
+    background: none;
+    border: 1.5px solid #e5e9f0;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #1a2e4a;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s;
+}
+
+.explainBtn:hover {
+    background: #f0f4ff;
+    border-color: #2563eb;
+}
+
+/* ── Result feedback ── */
+.feedback {
+    margin-top: 14px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 10px 14px;
+    border-radius: 8px;
+}
+
+.feedbackCorrect {
+    background: #f0fdf4;
+    color: #16a34a;
+}
+
+.feedbackWrong {
+    background: #fef2f2;
+    color: #dc2626;
+}
+
+/* ── Match pairs ── */
+.matchRow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.matchLeft {
+    flex: 1 1 160px;
+    font-size: var(--text-base);
+    color: var(--color-text-primary);
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+.matchSelect {
+    flex: 1 1 180px;
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1.5px solid var(--color-border);
+    font-size: var(--text-base);
+    color: var(--color-text-primary);
+    background: #fafbfc;
+    cursor: pointer;
+    transition: border-color 0.15s;
+    appearance: none;
+}
+
+.matchSelect:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.matchCorrect {
+    border-color: #16a34a;
+    background: #f0fdf4;
+}
+
+.matchWrong {
+    border-color: #dc2626;
+    background: #fef2f2;
+}
+
+.matchHint {
+    font-size: 0.8rem;
+    color: #dc2626;
+    font-weight: 600;
+}
+
+/* ── Manual input ── */
+.manualInput {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+}
+
+.manualInput input {
+    flex: 1;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1.5px solid #e5e9f0;
+    font-size: 0.95rem;
+    color: #1a2e4a;
+    background: #fafbfc;
+    transition: border-color 0.15s;
+}
+
+.manualInput input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.manualInput input:disabled {
+    background: #f5f7fa;
+}
+
+.checkBtn {
+    padding: 10px 20px;
+    border-radius: 6px;
+
+    background: white;
+    color: var(--color-text-primary);
+    font-size: var(--text-semibase);
+    border: 3px solid var(--color-border);
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.checkBtn:hover:not(:disabled) {
+    background: var(--color-accent-light);
+}
+
+.checkBtn:disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+/* ── Sticky bottom nav ── */
+.quizNav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-top: 1.5px solid #e5e9f0;
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    z-index: 100;
+}
+
+.navProgress {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #7a8aaa;
+}
+
+.navBtn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 22px;
+    border-radius: 10px;
+    border: 1.5px solid #e5e9f0;
+    background: #fff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #1a2e4a;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.navBtn:hover:not(:disabled) {
+    border-color: #2563eb;
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+.navBtn:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+}
+
+.finishBtn {
+    background: #2563eb;
+    color: #fff;
+    border-color: #2563eb;
+}
+
+.finishBtn:hover:not(:disabled) {
+    background: #1d4ed8;
+    border-color: #1d4ed8;
+    color: #fff;
+}
+
+/* ── Result screen ── */
+.quizResult {
+    max-width: 480px;
+    margin: 60px auto;
+    background: #fff;
+    border-radius: 20px;
+    border: 1.5px solid #e5e9f0;
+    padding: 48px 40px;
+    text-align: center;
+}
+
+.resultScore {
+    font-size: 4rem;
+    font-weight: 800;
+    color: #1a2e4a;
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.resultLabel {
+    font-size: 1rem;
+    color: #7a8aaa;
+    margin-bottom: 32px;
+}
+
+.resultBack {
+    padding: 12px 32px;
+    border-radius: 10px;
+    background: #1a2e4a;
+    color: #fff;
+    border: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.resultBack:hover {
+    background: #2563eb;
+}
+
+/* ── Empty state ── */
+.emptyState {
+    max-width: 400px;
+    margin: 80px auto;
+    text-align: center;
+    color: #7a8aaa;
+}
+
+@media (max-width: 600px) {
+    .quizBody {
+        padding: 16px 12px 110px;
+    }
+
+    .questionCard {
+        padding: 20px 16px;
+    }
+
+    .progressDot {
+        width: 26px;
+        height: 26px;
+        font-size: 0.65rem;
+    }
+
+    .navBtn span {
+        display: none;
+    }
+}

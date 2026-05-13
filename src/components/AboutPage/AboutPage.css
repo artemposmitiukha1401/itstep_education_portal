@@ -1,0 +1,186 @@
+@import url("../Root/Root.css");
+
+.aboutPage {
+    max-width: 1224px;
+    display: flex;
+    flex-direction: column;
+    margin: 3rem auto 5rem;
+
+}
+
+.aboutPage section {
+    margin-top: 56px;
+}
+
+.aboutIntro {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.aboutTitle {
+    font-size: var(--text-title);
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin: 0;
+
+}
+
+.aboutDescription {
+    font-size: var(--text-base);
+    line-height: 1.7;
+    color: var(--color-text-primary);
+    margin: 0;
+}
+.aboutServices {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.aboutServiceCard {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 3;
+    border: 3px solid var(--color-border);
+    border-radius: 20px;
+    padding: 28px;
+    gap: 16px;
+}
+
+.aboutServiceHeader {
+    display: flex;
+    align-items: center ;
+justify-content: flex-start;
+    gap: 14px;
+}
+.aboutServiceHeader img{
+    width: 3rem;
+}
+.aboutServiceIcon {
+    color: var(--color-border);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.aboutServiceTitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin: 0;
+    line-height: 1.35;
+}
+
+.aboutServiceDesc {
+     min-height: 120px;
+    flex: 1;
+    font-size: var(--text-small);
+    line-height: 1.65;
+    color: var(--color-text-primary);
+    margin: 0;
+}
+.aboutFaqItem img{
+    width: 1rem;
+}
+
+.aboutFeatureList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.aboutFeatureItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    color: var(--color-text-primary);
+}
+
+.aboutCheckIcon {
+    color: var(--color-text-primary);
+    flex-shrink: 0;
+    display: flex;
+}
+
+
+.aboutFaqTitle {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin: 0 0 24px 0;
+}
+
+.aboutFaqList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.aboutFaqItem {
+    border: 3px solid var(--color-border);
+    border-radius: 20px;
+    padding: 18px 20px;
+
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+
+.aboutFaqItem:hover {
+    background-color: #e0f2fe;
+
+}
+
+.aboutFaqQuestion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--color-text-primary);
+}
+.aboutFaqAnswer {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.1s ease-in-out,
+    opacity 0.25s ease;
+}
+
+.aboutFaqItem.open .aboutFaqAnswer {
+    max-height: 200px;
+    opacity: 1;
+}
+
+.aboutFaqAnswer p {
+    margin: 14px 0 0;
+    font-size: 0.9rem;
+    line-height: 1.65;
+    font-weight: lighter;
+    color: var(--color-text-primary);
+}
+
+@media (max-width: 680px) {
+    .aboutPage {
+        padding: 32px 16px 60px;
+        gap: 40px;
+    }
+
+    .aboutServices {
+        grid-template-columns: 1fr;
+    }
+
+    .aboutTitle {
+        font-size: 1.5rem;
+    }
+
+    .aboutFaqTitle {
+        font-size: 1.35rem;
+    }
+}

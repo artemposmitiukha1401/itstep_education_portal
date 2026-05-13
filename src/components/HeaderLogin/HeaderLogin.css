@@ -1,0 +1,25 @@
+@import url("../Root/Root.css");
+
+.login, .register{
+    color: var(--color-text-primary);
+    font-size: var(--text-base);
+}
+.HeaderLogin{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    width: max-content;
+}
+.register{
+    color: white;
+    background-color: var(--color-text-primary);
+    padding: 12px;
+    border-radius: 6px;
+    border: 3px solid var(--color-text-primary);
+    transition: all 0.25s ease-in-out;
+}
+.register:hover{
+    background-color: white;
+    border: 3px solid var(--color-text-primary);
+}

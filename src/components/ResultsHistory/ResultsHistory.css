@@ -1,0 +1,200 @@
+/* ===== QuizHistory — styled to match app design system ===== */
+
+.qh-page {
+    max-width: 860px;
+    margin: var(--space-2xl) auto;
+    padding: 0 var(--space-xl);
+}
+
+/* Back link */
+.qh-page > a {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+    text-decoration: none;
+    margin-bottom: var(--space-lg);
+    transition: color 0.2s;
+}
+
+.qh-page > a::before {
+    content: "←";
+}
+
+.qh-page > a:hover {
+    color: var(--color-accent);
+}
+
+/* Header */
+.qh-header {
+    margin-bottom: var(--space-xl);
+}
+
+.qh-title {
+    font-family: var(--font-display);
+    font-size: var(--text-2xl);
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-xl);
+    padding-bottom: var(--space-md);
+    border-bottom: 2px solid var(--color-border);
+}
+
+/* Summary stats */
+.qh-summary {
+    display: flex;
+    gap: var(--space-xl);
+    flex-wrap: wrap;
+}
+
+.qh-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.qh-stat-val {
+    font-family: var(--font-display);
+    font-size: var(--text-xl);
+    font-weight: 700;
+    color: var(--color-accent);
+    line-height: 1;
+}
+
+.qh-stat-key {
+    font-size: var(--text-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--color-text-muted);
+}
+
+/* Controls */
+.qh-controls {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: var(--space-lg);
+}
+
+.qh-clear-btn {
+    padding: var(--space-xs) var(--space-md);
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--color-border);
+    background: transparent;
+    color: var(--color-text-muted);
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    cursor: pointer;
+    transition: border-color 0.2s, color 0.2s, background 0.2s;
+}
+
+.qh-clear-btn:hover {
+    border-color: #e88;
+    color: #c0392b;
+    background: #fdf2f2;
+}
+
+/* List */
+.qh-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.qh-empty {
+    text-align: center;
+    color: var(--color-text-muted);
+    font-size: var(--text-sm);
+    padding: var(--space-2xl) 0;
+}
+
+/* Entry card */
+.qh-entry {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.qh-entry:hover {
+    box-shadow: var(--shadow-md);
+    border-color: var(--color-border-strong);
+}
+
+.qh-entry-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-md) var(--space-lg);
+}
+
+/* Score ring — adapt colors to light theme */
+.qh-ring {
+    flex-shrink: 0;
+}
+
+/* Info */
+.qh-entry-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    min-width: 0;
+}
+
+.qh-entry-label {
+    font-family: var(--font-display);
+    font-size: var(--text-base);
+    font-weight: 600;
+    color: var(--color-text-primary);
+}
+
+.qh-entry-titles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+}
+
+.qh-tag {
+    display: inline-block;
+    padding: 2px var(--space-sm);
+    border-radius: var(--radius-sm);
+    font-size: var(--text-xs);
+    font-weight: 500;
+    background: var(--color-accent-light);
+    color: var(--color-accent);
+    border: 1px solid #d4c8ed;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 260px;
+}
+
+.qh-entry-meta {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+}
+
+.qh-entry-date {
+    font-size: var(--text-xs);
+    color: var(--color-text-muted);
+}
+
+/* Delete button */
+.qh-delete-btn {
+    background: transparent;
+    border: none;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    font-size: var(--text-sm);
+    padding: var(--space-xs);
+    border-radius: var(--radius-sm);
+    transition: color 0.15s, background 0.15s;
+    flex-shrink: 0;
+    line-height: 1;
+}
+
+.qh-delete-btn:hover {
+    color: #c0392b;
+    background: #fdf2f2;
+}
