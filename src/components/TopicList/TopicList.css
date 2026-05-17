@@ -3,28 +3,26 @@
 @import url("../Root/Root.css");
 
 .TopicList {
-
     min-height: 100vh;
-    padding: 3rem 1.25rem 5rem;
+    padding: clamp(2rem, 4vw, 3rem) clamp(1rem, 3vw, 1.25rem) 5rem;
     max-width: 1224px;
-    width: 1224px;
-    margin: 0 auto;;
-
+    width: min(100% - 2rem, 1224px);
+    margin: 0 auto;
 }
 
-
 .TopicList-title {
-    font-size: var(--text-title);
+    font-size: clamp(1.8rem, 5vw, var(--text-title));
     font-weight: 600;
     line-height: 1.25;
     margin: 0 0 2rem;
     padding-bottom: 0.75rem;
-
+    transition: opacity 0.25s ease;
 }
 
 .TopicList-arrowIcon {
     width: 22px;
     height: 22px;
+    flex-shrink: 0;
     transition: transform 0.25s ease;
 }
 
@@ -36,11 +34,63 @@
     border-bottom: 3px solid var(--color-border);
 }
 
-
 .TopicList-topic:last-child {
     border-bottom: none;
 }
 
+.topicTestBtn {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    width: 180px;
+    height: 52px;
+    margin-top: 1rem;
+    padding: 10px 22px;
+    border: 3px solid var(--color-border);
+    border-radius: 6px;
+    background-color: transparent;
+    color: var(--color-text-primary);
+    text-decoration: none;
+    overflow: hidden;
+    transition: border-color 0.25s, background 0.25s;
+}
+
+.topicTestBtn:hover {
+    background-color: #e0f2fe;
+    color: var(--color-text-primary);
+}
+
+.topicTestBtnText,
+.topicTestBtnIcon {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--text-base);
+    font-weight: 500;
+    color: var(--color-text-primary);
+    white-space: nowrap;
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s ease;
+}
+
+.topicTestBtnIcon {
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.topicTestBtn:hover .topicTestBtnText {
+    transform: translateX(110%);
+    opacity: 0;
+}
+
+.topicTestBtn:hover .topicTestBtnIcon {
+    transform: translateX(0);
+    opacity: 1;
+}
 
 .TopicList-topicButton {
     width: 100%;
@@ -52,10 +102,8 @@
     border: none;
     cursor: pointer;
     padding: 1.2rem 0.25rem;
-
     font-size: var(--text-base);
     font-weight: 600;
-
     text-align: left;
     transition: color 0.18s;
 }
@@ -64,17 +112,16 @@
     border: 3px solid var(--color-border);
     padding: 18px 20px;
     border-radius: 20px;
+    max-height: 70vh;
+    scrollbar-width: none;
+    overflow-y: auto;
 }
 
-
 .TopicList-topicButton span:last-child {
-
     font-size: 0.7rem;
-
     flex-shrink: 0;
     transition: color 0.18s;
 }
-
 
 .TopicList-subtopics {
     display: flex;
@@ -82,13 +129,10 @@
     padding: 0 1rem;
     margin: 0 0.25rem;
     gap: 0.15rem;
-
     max-height: 0;
     overflow: hidden;
     opacity: 0;
-    transition: max-height 0.1s ease-in-out,
-    opacity 0.25s ease,
-    padding 0.35s ease;
+    transition: max-height 0.1s ease-in-out, opacity 0.25s ease, padding 0.35s ease;
 }
 
 .TopicList-subtopics.open {
@@ -96,21 +140,23 @@
     opacity: 1;
     padding: 0.25rem 1rem 1rem;
 }
-.TopicList-title {
-    transition: opacity 0.25s ease;
-}
 
 .TopicList-layout.split .TopicList-title {
     opacity: 0;
     pointer-events: none;
 }
+
 .TopicList-subtopicLink {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    cursor: pointer;
     font-size: var(--text-semibase);
     color: var(--color-text-primary);
     text-decoration: none;
-    padding: 0.45em 0.75em;
-
-    width: max-content;
+    padding: 8px 16px;
     transition: all ease-in-out 0.18s;
     line-height: 1.4;
     border-radius: 6px;
@@ -119,40 +165,49 @@
 .TopicList-subtopicLink:hover {
     color: var(--color-text-primary);
     background-color: var(--color-accent-light);
+}
 
+.TopicList-subtopicLink.active {
+    background-color: var(--color-accent-light);
 }
 
 .TopicList-layout {
     display: flex;
     min-height: 100vh;
-    width: 1224px;
-    margin: 0 auto 5rem;
-    margin-top: 3rem;
+    width: min(100% - 2rem, 1224px);
+    max-width: 1224px;
+    margin: 3rem auto 5rem;
     gap: 1rem;
 }
+
 .TopicList-sidebar {
     width: 100%;
     transition: width 0.3s ease;
     flex-shrink: 0;
     align-self: flex-start;
     position: sticky;
-    scrollbar-width: none;
     top: 0;
-}
-.topics {
-    border: 3px solid var(--color-border);
-    padding: 18px 20px;
-    border-radius: 20px;
-    max-height: 70vh;
     scrollbar-width: none;
-    overflow-y: auto;
 }
+
+.TopicList-layout.split .TopicList-sidebar {
+    width: clamp(320px, 34vw, 400px);
+}
+
+.TopicList-content {
+    flex: 1;
+    min-width: 0;
+    overflow-y: auto;
+    padding: 0 30px 0;
+}
+
 .TopicList-contentNav {
     display: flex;
-    gap: 12px;
+    gap: 8px;
     margin-bottom: 2rem;
     flex-wrap: wrap;
 }
+
 .nav-btn {
     display: inline-flex;
     align-items: center;
@@ -189,9 +244,9 @@
     font-weight: 500;
     color: var(--color-text-primary);
     white-space: nowrap;
-    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 0.25s ease;
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s ease;
 }
+
 .font-size-nav-btn .font-size-icon {
     width: 28px;
     height: 28px;
@@ -200,9 +255,7 @@
     margin: auto;
     transform: translateX(100%);
     opacity: 0;
-    transition:
-            transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
-            opacity 0.25s ease;
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s ease;
 }
 
 .font-size-nav-btn:hover .btn-text {
@@ -214,6 +267,7 @@
     transform: translateX(0);
     opacity: 1;
 }
+
 .nav-btn .btn-arrow {
     width: 30px;
     margin: auto;
@@ -231,7 +285,6 @@
     opacity: 1;
 }
 
-/* Кнопка "Далі" — стрелка выезжает слева */
 .nav-btn--right:hover .btn-text {
     transform: translateX(110%);
     opacity: 0;
@@ -239,40 +292,14 @@
 
 .nav-btn--right .btn-arrow {
     transform: translateX(-100%);
-
 }
 
 .nav-btn--right:hover .btn-arrow {
     transform: translateX(0);
 }
 
-.TopicList-layout.split .TopicList-sidebar {
-    width: 400px;
-}
-.TopicList-content {
-    flex: 1;
-    overflow-y: auto;
-    padding: 0 24px 24px;
-}
-
-/* кнопка подтемы вместо Link */
-.TopicList-subtopicLink {
-    display: block;
-    width: 100%;
-    text-align: left;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 8px 16px;
-}
-
-.TopicList-subtopicLink.active {
-    background-color: var(--color-accent-light);;
-}
-
 .TopicList-noSubtopics {
     font-style: italic;
-
     font-size: 0.9rem;
     padding: 0.4em 0.75em;
     margin: 0;
@@ -280,7 +307,6 @@
 
 .TopicList-empty {
     min-height: 100vh;
-
     font-family: 'Literata', Georgia, serif;
     display: flex;
     flex-direction: column;
@@ -298,18 +324,201 @@
     margin: 0;
 }
 
+.subtopicSlide {
+    will-change: transform, opacity;
+}
 
-/* ── Responsive ── */
-@media (max-width: 600px) {
-    .TopicList {
-        padding: 2rem 1rem 4rem;
+@keyframes slideInFromBottom {
+    from {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromTop {
+    from {
+        transform: translateY(-40px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.slideIn--down {
+    animation: slideInFromBottom 0.38s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.slideIn--up {
+    animation: slideInFromTop 0.38s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@media (max-width: 1024px) {
+    .TopicList-layout {
+        width: min(100% - 2rem, 900px);
+        gap: 1.25rem;
+    }
+
+    .TopicList-layout.split {
+        flex-direction: column;
+    }
+
+    .TopicList-layout.split .TopicList-sidebar {
+        width: 100%;
+        position: static;
+    }
+
+    .TopicList-layout.split .TopicList-title {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .TopicList-content {
+        width: 100%;
+        padding: 0;
+    }
+
+    .topics {
+        max-height: none;
+    }
+
+    .TopicList-contentNav {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        padding: 0.75rem 0;
+        background: var(--color-bg);
+    }
+}
+
+@media (max-width: 768px) {
+    .TopicList-layout {
+        width: 100%;
+        margin-top: 2rem;
+        padding: 0 1rem;
+        flex-direction: column;
     }
 
     .TopicList-title {
-        font-size: 1.45rem;
+        font-size: clamp(1.8rem, 8vw, 2.4rem);
+        margin-bottom: 1.25rem;
+    }
+
+    .topics {
+        padding: 14px;
+        border-radius: 16px;
     }
 
     .TopicList-topicButton {
+        gap: 0.75rem;
+        padding: 1rem 0;
         font-size: 1rem;
+        align-items: flex-start;
+    }
+
+    .TopicList-arrowIcon {
+        width: 20px;
+        height: 20px;
+        margin-top: 0.2rem;
+    }
+
+    .TopicList-subtopics {
+        padding: 0;
+        margin: 0;
+    }
+
+    .TopicList-subtopics.open {
+        padding: 0.25rem 0 1rem;
+    }
+
+    .TopicList-subtopicLink {
+        padding: 0.7rem 0.8rem;
+        font-size: 0.95rem;
+    }
+
+    .topicTestBtn {
+        width: 100%;
+        margin-top: 0.75rem;
+    }
+
+    .TopicList-contentNav {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.75rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .nav-btn {
+        width: 100%;
+        height: 48px;
+    }
+
+    .back-btn {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .TopicList-layout {
+        margin-top: 1.25rem;
+        padding: 0 0.75rem;
+    }
+
+    .TopicList-title {
+        font-size: 1.55rem;
+        line-height: 1.25;
+    }
+
+    .topics {
+        padding: 10px 12px;
+        border-width: 2px;
+        border-radius: 14px;
+    }
+
+    .TopicList-topic {
+        border-bottom-width: 2px;
+    }
+
+    .TopicList-topicButton {
+        font-size: 0.95rem;
+        padding: 0.9rem 0;
+    }
+
+    .TopicList-topicNumber {
+        flex-shrink: 0;
+    }
+
+    .TopicList-contentNav {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.6rem;
+    }
+
+    .nav-btn {
+        height: 46px;
+        padding: 8px 14px;
+        border-width: 2px;
+    }
+
+    .nav-btn .btn-text,
+    .nav-btn .btn-arrow {
+        font-size: 0.95rem;
+    }
+
+    .topicTestBtn {
+        height: 48px;
+        border-width: 2px;
+    }
+
+    .topicTestBtnText,
+    .topicTestBtnIcon {
+        font-size: 0.95rem;
     }
 }

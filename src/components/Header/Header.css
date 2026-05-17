@@ -1,19 +1,45 @@
 @import url("../Root/Root.css");
 
 .Header {
+  width: 100%;
+  min-height: 6rem;
+  padding: 1.5rem clamp(1rem, 4vw, 2rem);
+  background-color: var(--color-surface);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 6rem;
-  padding: 2rem;
-  background-color: var(--color-surface);
-
-
+  gap: 1.5rem;
   position: sticky;
   top: 0;
   z-index: 100;
 }
 
-img{
-  width: 10rem;
+.Header img {
+  width: clamp(7rem, 16vw, 10rem);
+  height: auto;
+  display: block;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .Header {
+    min-height: auto;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .Header img {
+    width: 7.5rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .Header {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .Header img {
+    width: 7rem;
+  }
 }

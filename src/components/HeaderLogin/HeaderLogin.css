@@ -1,25 +1,165 @@
 @import url("../Root/Root.css");
 
-.login, .register{
-    color: var(--color-text-primary);
-    font-size: var(--text-base);
+.HeaderLogin {
+  display: flex;
+  flex-direction: row;
+  gap: clamp(0.75rem, 2vw, 2rem);
+  align-items: center;
+  justify-content: flex-end;
+  width: auto;
+  flex-shrink: 0;
 }
-.HeaderLogin{
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    align-items: center;
-    width: max-content;
+
+.login,
+.register {
+  color: var(--color-text-primary);
+  font-size: var(--text-base);
+  font-family: var(--font-body);
+  cursor: pointer;
 }
-.register{
-    color: white;
-    background-color: var(--color-text-primary);
-    padding: 12px;
-    border-radius: 6px;
-    border: 3px solid var(--color-text-primary);
-    transition: all 0.25s ease-in-out;
+
+.login {
+  min-width: 100px;
+  height: 52px;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  background-color: white;
+  transition: all ease-in-out 0.2s;
+  border: 3px solid white;
+  white-space: nowrap;
 }
-.register:hover{
-    background-color: white;
-    border: 3px solid var(--color-text-primary);
+
+.login:hover {
+  background-color: #e0f2fe;
+  color: var(--color-text-primary);
+  border: 3px solid var(--color-border);
+}
+
+.register {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 220px;
+  height: 52px;
+  padding: 10px 22px;
+  border: 3px solid var(--color-border);
+  border-radius: 6px;
+  background-color: transparent;
+  color: var(--color-text-primary);
+  text-decoration: none;
+  overflow: hidden;
+  transition: border-color 0.25s, background 0.25s;
+  white-space: nowrap;
+}
+
+.register:hover {
+  background-color: #e0f2fe;
+  border-color: var(--color-border);
+  color: var(--color-text-primary);
+}
+
+.registerText,
+.registerIcon {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--text-base);
+  font-weight: 500;
+  color: var(--color-text-primary);
+  white-space: nowrap;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s ease;
+}
+
+.registerIcon {
+  width: 30px;
+  height: 30px;
+  margin: auto;
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.register:hover .registerText {
+  transform: translateX(110%);
+  opacity: 0;
+}
+
+.register:hover .registerIcon {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .HeaderLogin {
+    gap: 0.75rem;
+  }
+
+  .login {
+    min-width: auto;
+    height: 48px;
+    padding: 0.45rem 0.9rem;
+    font-size: 1rem;
+  }
+
+  .register {
+    width: 190px;
+    height: 48px;
+    padding: 8px 18px;
+  }
+
+  .registerText,
+  .registerIcon {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .HeaderLogin {
+    width: 100%;
+    justify-content: space-between;
+    gap: 0.75rem;
+  }
+
+  .login,
+  .register {
+    height: 46px;
+  }
+
+  .login {
+    flex: 1;
+    text-align: center;
+    padding: 0.4rem 0.75rem;
+    border: 2px solid white;
+  }
+
+  .login:hover {
+    border: 2px solid var(--color-border);
+  }
+
+  .register {
+    flex: 1.4;
+    width: auto;
+    min-width: 0;
+    border-width: 2px;
+  }
+
+  .registerText,
+  .registerIcon {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .HeaderLogin {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .login,
+  .register {
+    width: 100%;
+    flex: none;
+  }
 }

@@ -1,149 +1,226 @@
-import { useEffect, useState } from "react";
-import "./ResultsHistory.css";
+import { useEffect, useState } from "react";import { Link } from "react-router-dom";import "./ResultsHistory.css";
 
 const STORAGE_KEY = "quiz_results";
 
-function formatDate(iso) {
-    const d = new Date(iso);
-    return d.toLocaleString("uk-UA", {
-        day: "2-digit",
-        month: "2-digit",
-        year: "numeric",
-        hour: "2-digit",
-        minute: "2-digit",
-    });
+function formatDate(iso) {const d = new Date(iso);
+
+return d.toLocaleString("uk-UA", {
+    day: "2-digit",
+    month: "2-digit",
+    year: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+});
+
 }
 
-function ScoreRing({ percent }) {
-    const r = 22;
-    const circ = 2 * Math.PI * r;
-    const dash = (percent / 100) * circ;
+function ScoreRing({ percent }) {const r = 22;const circ = 2 * Math.PI * r;const dash = (percent / 100) * circ;
 
-    const color =
-        percent >= 80 ? "#4ade80"
-            : percent >= 50 ? "#facc15"
-                : "#f87171";
+const color =
+    percent >= 80
+        ? "#16a34a"
+        : percent >= 50
+          ? "#facc15"
+          : "#dc2626";
 
-    return (
-        <svg className="qh-ring" viewBox="0 0 56 56" width="56" height="56">
-            <circle cx="28" cy="28" r={r} fill="none" stroke="#ffffff18" strokeWidth="5" />
-            <circle
-                cx="28" cy="28" r={r}
-                fill="none"
-                stroke={color}
-                strokeWidth="5"
-                strokeDasharray={`${dash} ${circ}`}
-                strokeLinecap="round"
-                transform="rotate(-90 28 28)"
-                style={{ transition: "stroke-dasharray 0.6s ease" }}
-            />
-            <text x="28" y="33" textAnchor="middle" fontSize="12" fontWeight="700" fill={color}>
-                {percent}%
-            </text>
-        </svg>
-    );
+return (
+    <svg className="resultRing" viewBox="0 0 56 56" width="56" height="56">
+        <circle
+            cx="28"
+            cy="28"
+            r={r}
+            fill="none"
+            stroke="#e0f2fe"
+            strokeWidth="5"
+        />
+
+        <circle
+            cx="28"
+            cy="28"
+            r={r}
+            fill="none"
+            stroke={color}
+            strokeWidth="5"
+            strokeDasharray={`${dash} ${circ}`}
+            strokeLinecap="round"
+            transform="rotate(-90 28 28)"
+        />
+
+        <text
+            x="28"
+            y="33"
+            textAnchor="middle"
+            fontSize="12"
+            fontWeight="700"
+            fill={color}
+        >
+            {percent}%
+        </text>
+    </svg>
+);
+
 }
 
-function HistoryEntry({ entry, onDelete }) {
-    const label =
-        entry.percent >= 80 ? "Відмінно" :
-            entry.percent >= 50 ? "Добре" : "Потрібно повторити";
+function HistoryCard({ entry, onDelete }) {const label =entry.percent >= 80? "Відмінно": entry.percent >= 50? "Добре": "Потрібно повторити";
 
-    return (
-        <div className="qh-entry">
-            <div className="qh-entry-header">
-                <ScoreRing percent={entry.percent} />
-                <div className="qh-entry-info">
-                    <span className="qh-entry-label">{label}</span>
-                    {entry.topicTitle && (
-                        <span className="qh-entry-titles">
-                            <span className="qh-tag">{entry.topicTitle}</span>
-                        </span>
-                    )}
-                    <span className="qh-entry-meta">{entry.score} / {entry.total} правильних</span>
-                    <span className="qh-entry-date">{formatDate(entry.date)}</span>
-                </div>
-                <button
-                    className="qh-delete-btn"
-                    title="Видалити"
-                    onClick={() => onDelete(entry.id)}
-                >
-                    ✕
-                </button>
-            </div>
-        </div>
-    );
-}
+return (
+    <article className="resultCard">
+        <div className="resultCardHeader">
+            <ScoreRing percent={entry.percent} />
 
-export default function QuizHistory() {
-    const [results, setResults] = useState([]);
+            <div className="resultInfo">
+                <span className="resultLabel">{label}</span>
 
-    useEffect(() => {
-        const raw = localStorage.getItem(STORAGE_KEY);
-        if (raw) {
-            try { setResults(JSON.parse(raw)); }
-            catch { setResults([]); }
-        }
-    }, []);
-
-    function handleDelete(id) {
-        const updated = results.filter((r) => r.id !== id);
-        setResults(updated);
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(updated));
-    }
-
-    function handleClearAll() {
-        if (window.confirm("Видалити всю історію результатів?")) {
-            setResults([]);
-            localStorage.removeItem(STORAGE_KEY);
-        }
-    }
-
-    const avgPercent = results.length
-        ? Math.round(results.reduce((s, r) => s + r.percent, 0) / results.length)
-        : null;
-
-    return (
-        <div className="qh-page">
-            <header className="qh-header">
-                <h1 className="qh-title">Історія результатів</h1>
-                {results.length > 0 && (
-                    <div className="qh-summary">
-                        <div className="qh-stat">
-                            <span className="qh-stat-val">{results.length}</span>
-                            <span className="qh-stat-key">спроб</span>
-                        </div>
-                        <div className="qh-stat">
-                            <span className="qh-stat-val">{avgPercent}%</span>
-                            <span className="qh-stat-key">середній результат</span>
-                        </div>
-                        <div className="qh-stat">
-                            <span className="qh-stat-val">
-                                {results.filter((r) => r.percent >= 80).length}
-                            </span>
-                            <span className="qh-stat-key">відмінних</span>
-                        </div>
+                {entry.topicTitle && (
+                    <div className="resultTags">
+                        <span className="resultTag">{entry.topicTitle}</span>
                     </div>
                 )}
-            </header>
+
+                <span className="resultMeta">
+                    {entry.score} / {entry.total} правильних
+                </span>
+
+                <span className="resultDate">{formatDate(entry.date)}</span>
+            </div>
+
+            <button
+                type="button"
+                className="resultDeleteBtn"
+                title="Видалити"
+                onClick={() => onDelete(entry.id)}
+            >
+                ✕
+            </button>
+        </div>
+    </article>
+);
+
+}
+
+export default function QuizHistory() {const [results, setResults] = useState([]);
+
+useEffect(() => {
+    const raw = localStorage.getItem(STORAGE_KEY);
+
+    if (!raw) return;
+
+    try {
+        setResults(JSON.parse(raw));
+    } catch {
+        setResults([]);
+    }
+}, []);
+
+function handleDelete(id) {
+    const updated = results.filter((result) => result.id !== id);
+
+    setResults(updated);
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(updated));
+}
+
+function handleClearAll() {
+    if (!window.confirm("Видалити всю історію результатів?")) return;
+
+    setResults([]);
+    localStorage.removeItem(STORAGE_KEY);
+}
+
+const avgPercent = results.length
+    ? Math.round(results.reduce((sum, result) => sum + result.percent, 0) / results.length)
+    : 0;
+
+const excellentCount = results.filter((result) => result.percent >= 80).length;
+
+return (
+    <main className="resultsPage">
+        <Link to="/home" className="resultsBackBtn">
+            <span className="resultsBackText">Предмети</span>
+
+            <svg
+                className="resultsBackIcon"
+                width="100%"
+                height="100%"
+                viewBox="0 0 24 24"
+                fill="none"
+            >
+                <path
+                    d="M19 12H5M5 12L12 19M5 12L12 5"
+                    stroke="#103058"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                />
+            </svg>
+        </Link>
+
+        <header className="resultsHeader">
+            <h1 className="resultsTitle">Історія результатів</h1>
 
             {results.length > 0 && (
-                <div className="qh-controls">
-                    <button className="qh-clear-btn" onClick={handleClearAll}>
-                        Очистити все
-                    </button>
+                <div className="resultsSummary">
+                    <div className="resultStat">
+                        <span className="resultStatValue">{results.length}</span>
+                        <span className="resultStatLabel">спроб</span>
+                    </div>
+
+                    <div className="resultStat">
+                        <span className="resultStatValue">{avgPercent}%</span>
+                        <span className="resultStatLabel">середній результат</span>
+                    </div>
+
+                    <div className="resultStat">
+                        <span className="resultStatValue">{excellentCount}</span>
+                        <span className="resultStatLabel">відмінних</span>
+                    </div>
                 </div>
             )}
+        </header>
 
-            <div className="qh-list">
-                {results.length === 0 ? (
-                    <div className="qh-empty">Ви ще не проходили жодного тесту.</div>
-                ) : (
-                    results.map((entry) => (
-                        <HistoryEntry key={entry.id} entry={entry} onDelete={handleDelete} />
-                    ))
-                )}
+        {results.length > 0 && (
+            <div className="resultsControls">
+                <button
+                    type="button"
+                    className="resultsClearBtn"
+                    onClick={handleClearAll}
+                >
+                    <span className="resultsClearText">Очистити все</span>
+
+                    <svg
+                        className="resultsClearIcon"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                    >
+                        <path
+                            d="M4 7H20M10 11V17M14 11V17M6 7L7 21H17L18 7M9 7V4H15V7"
+                            stroke="#103058"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                        />
+                    </svg>
+                </button>
             </div>
-        </div>
-    );
+        )}
+
+        <section className="resultsList">
+            {results.length === 0 ? (
+                <div className="resultsEmpty">
+                    Ви ще не проходили жодного тесту.
+                </div>
+            ) : (
+                results.map((entry) => (
+                    <HistoryCard
+                        key={entry.id}
+                        entry={entry}
+                        onDelete={handleDelete}
+                    />
+                ))
+            )}
+        </section>
+    </main>
+);
+
 }

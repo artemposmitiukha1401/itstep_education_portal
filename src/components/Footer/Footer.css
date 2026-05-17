@@ -1,154 +1,276 @@
 @import "../Root/Root.css";
-*{
-    font-family: var(--font-body);
-}
-.footer {
-    background-color: var(--color-text-primary);
-    padding: 48px 64px;
 
+.footer {
+  background-color: #12375f;
+  padding: clamp(32px, 5vw, 48px) clamp(20px, 6vw, 64px);
+  font-family: var(--font-body);
 }
 
 .footerInner {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr 1fr;
-    gap: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
+  width: min(100%, 1200px);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(220px, 1.5fr) repeat(3, minmax(140px, 1fr));
+  gap: clamp(28px, 4vw, 40px);
 }
 
-.brand {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+.footerBrand {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
 }
 
-.logo {
-    margin-bottom: 4px;
+.footerLogo {
+  margin-bottom: 4px;
 }
 
-.logoMark {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #fff;
+.footerLogo img {
+  width: clamp(8rem, 14vw, 10rem);
+  height: auto;
+  display: block;
 }
 
-.brandName {
-    font-size: 1.1rem;
-    font-weight: 800;
-    color: #fff;
-    margin: 0;
+.footerBrandName {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #fff;
+  margin: 0;
 }
 
-.tagline {
-    font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.65);
-    line-height: 1.6;
-    margin: 0;
-    width: 11rem;
+.footerTagline {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.6;
+  margin: 0;
+  max-width: 240px;
 }
 
-.colHeading {
-    font-size: 20px;
-    font-weight: 700;
-    color: #fff;
-    margin: 0 0 16px 0;
+.footerColHeading {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 16px 0;
 }
 
-.nav {
-    display: flex;
-    flex-direction: column;
+.footerNav,
+.footerContacts,
+.footerSocials {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
 }
 
-.navList {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
+.footerNavList,
+.footerSocialList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.navLink {
-    font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.65);
-    text-decoration: none;
-    transition: color 0.2s;
+.footerNavList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-.navLink:hover {
-    color: #fff;
+.footerNavLink,
+.footerEmail {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.82);
+  text-decoration: none;
+  transition: color 0.2s;
+  overflow-wrap: anywhere;
 }
 
-.contacts {
-    display: flex;
-    flex-direction: column;
+.footerNavLink:hover,
+.footerEmail:hover {
+  color: #fff;
 }
 
-.email {
-    font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.65);
-    text-decoration: none;
-    transition: color 0.2s;
+.footerSocialList {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
-.email:hover {
-    color: #fff;
+.footerSocialLink {
+  width: 38px;
+  height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  transition: background-color 0.2s, transform 0.2s;
 }
 
-.socials {
-    display: flex;
-    flex-direction: column;
-    color: white;
+.footerSocialLink:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+  transform: translateY(-2px);
 }
 
-.socialList {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
-}
-
-
-.socialLink {
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-    color: white !important;
-    transition: color 0.2s;
-}
-.socialLink img {
-    width: 30px;
-}
-
-.socialLink:hover {
-    color: #fff;
+.footerSocialLink img {
+  width: 30px;
+  height: 30px;
+  display: block;
 }
 
 @media (max-width: 900px) {
-    .footer {
-        padding: 40px 32px;
-    }
+  .footerInner {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 
-    .footerInner {
-        grid-template-columns: 1fr 1fr;
-        gap: 36px;
-    }
+  .footerBrand {
+    grid-column: auto;
+  }
 
-    .brand {
-        grid-column: 1 / -1;
-    }
+  .footerTagline {
+    max-width: 260px;
+  }
 }
 
 @media (max-width: 560px) {
-    .footer {
-        padding: 32px 20px;
-    }
+  .footer {
+    padding: 24px 16px;
+    margin-top: 2rem;
+  }
 
-    .footerInner {
-        grid-template-columns: 1fr;
-        gap: 28px;
-    }
+  .footerInner {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "brand nav"
+      "contacts socials";
+    gap: 36px 28px;
+    padding: 26px 22px;
+    
+    background-color: #12375f;
+  }
+
+  .footerBrand {
+    grid-area: brand;
+  }
+
+  .footerNav {
+    grid-area: nav;
+  }
+
+  .footerContacts {
+    grid-area: contacts;
+  }
+
+  .footerSocials {
+    grid-area: socials;
+  }
+
+  .footerLogo img {
+    width: 8.5rem;
+  }
+
+  .footerBrandName {
+    font-size: 1.35rem;
+  }
+
+  .footerTagline {
+    max-width: 150px;
+    font-size: 0.9rem;
+    line-height: 1.45;
+  }
+
+  .footerColHeading {
+    font-size: 1.25rem;
+    margin-bottom: 14px;
+  }
+
+  .footerNavList {
+    gap: 10px;
+  }
+
+  .footerNavLink,
+  .footerEmail {
+    font-size: 0.95rem;
+    line-height: 1.45;
+  }
+
+  .footerEmail {
+    display: block;
+    max-width: 150px;
+  }
+
+  .footerSocialList {
+    gap: 14px;
+  }
+
+  .footerSocialLink {
+    width: 34px;
+    height: 34px;
+  }
+
+  .footerSocialLink img {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (max-width: 430px) {
+  .footer {
+    padding: 18px 12px;
+  }
+
+  .footerInner {
+    gap: 32px 20px;
+    padding: 24px 18px;
+  }
+
+  .footerLogo img {
+    width: 7.5rem;
+  }
+
+  .footerBrandName {
+    font-size: 1.2rem;
+  }
+
+  .footerTagline {
+    max-width: 135px;
+    font-size: 0.82rem;
+  }
+
+  .footerColHeading {
+    font-size: 1.08rem;
+  }
+
+  .footerNavLink,
+  .footerEmail {
+    font-size: 0.82rem;
+  }
+
+  .footerSocialList {
+    gap: 10px;
+  }
+
+  .footerSocialLink {
+    width: 30px;
+    height: 30px;
+  }
+
+  .footerSocialLink img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 340px) {
+  .footerInner {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "brand"
+      "nav"
+      "contacts"
+      "socials";
+  }
+
+  .footerTagline,
+  .footerEmail {
+    max-width: 100%;
+  }
 }

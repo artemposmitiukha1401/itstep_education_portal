@@ -1,0 +1,13 @@
+@import url("../LoginModalWindow/LoginModalWindow.css");
+
+.registerModal {
+  max-width: 520px;
+}
+
+.registerAgreement {
+  margin: -0.25rem 0 0.25rem;
+  text-align: center;
+  font-size: 0.78rem;
+  line-height: 1.4;
+  color: #6b7280;
+}

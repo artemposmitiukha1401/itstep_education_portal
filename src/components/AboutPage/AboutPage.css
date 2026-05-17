@@ -1,64 +1,69 @@
 @import url("../Root/Root.css");
 
 .aboutPage {
+    width: min(100% - 2rem, 1224px);
     max-width: 1224px;
     display: flex;
     flex-direction: column;
-    margin: 3rem auto 5rem;
-
+    margin: clamp(2rem, 4vw, 3rem) auto 5rem;
 }
 
 .aboutPage section {
-    margin-top: 56px;
+    margin-top: clamp(36px, 6vw, 56px);
 }
 
 .aboutIntro {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    font-family: 'Montserrat', sans-serif;
-
+    font-family: var(--font-body);
 }
 
 .aboutTitle {
-    font-size: var(--text-title);
+    font-size: clamp(2rem, 6vw, var(--text-title));
     font-weight: 700;
     color: var(--color-text-primary);
     margin: 0;
-
+    line-height: 1.15;
 }
 
 .aboutDescription {
-    font-size: var(--text-base);
+    font-size: clamp(1rem, 2vw, var(--text-base));
     line-height: 1.7;
     color: var(--color-text-primary);
     margin: 0;
+    max-width: 900px;
 }
+
 .aboutServices {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(16px, 3vw, 24px);
 }
 
 .aboutServiceCard {
-    display: grid;
-    grid-template-rows: subgrid;
-    grid-row: span 3;
+    display: flex;
+    flex-direction: column;
     border: 3px solid var(--color-border);
     border-radius: 20px;
-    padding: 28px;
+    padding: clamp(20px, 3vw, 28px);
     gap: 16px;
+    min-width: 0;
 }
 
 .aboutServiceHeader {
     display: flex;
-    align-items: center ;
-justify-content: flex-start;
+    align-items: center;
+    justify-content: flex-start;
     gap: 14px;
 }
-.aboutServiceHeader img{
-    width: 3rem;
+
+.aboutServiceHeader img {
+    width: clamp(2.4rem, 5vw, 3rem);
+    height: auto;
+    flex-shrink: 0;
 }
+
 .aboutServiceIcon {
     color: var(--color-border);
     flex-shrink: 0;
@@ -66,7 +71,7 @@ justify-content: flex-start;
 }
 
 .aboutServiceTitle {
-    font-size: 1.5rem;
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
     font-weight: 700;
     color: var(--color-text-primary);
     margin: 0;
@@ -74,15 +79,18 @@ justify-content: flex-start;
 }
 
 .aboutServiceDesc {
-     min-height: 120px;
+    min-height: 120px;
     flex: 1;
     font-size: var(--text-small);
     line-height: 1.65;
     color: var(--color-text-primary);
     margin: 0;
 }
-.aboutFaqItem img{
+
+.aboutFaqItem img {
     width: 1rem;
+    height: auto;
+    flex-shrink: 0;
 }
 
 .aboutFeatureList {
@@ -100,6 +108,7 @@ justify-content: flex-start;
     gap: 10px;
     font-size: 0.9rem;
     color: var(--color-text-primary);
+    line-height: 1.45;
 }
 
 .aboutCheckIcon {
@@ -108,12 +117,12 @@ justify-content: flex-start;
     display: flex;
 }
 
-
 .aboutFaqTitle {
-    font-size: 1.75rem;
+    font-size: clamp(1.35rem, 4vw, 1.75rem);
     font-weight: 700;
     color: var(--color-text-primary);
     margin: 0 0 24px 0;
+    line-height: 1.25;
 }
 
 .aboutFaqList {
@@ -125,15 +134,13 @@ justify-content: flex-start;
 .aboutFaqItem {
     border: 3px solid var(--color-border);
     border-radius: 20px;
-    padding: 18px 20px;
-
+    padding: clamp(16px, 3vw, 18px) clamp(16px, 3vw, 20px);
     cursor: pointer;
     transition: background-color 0.25s;
 }
 
 .aboutFaqItem:hover {
     background-color: #e0f2fe;
-
 }
 
 .aboutFaqQuestion {
@@ -141,20 +148,21 @@ justify-content: flex-start;
     justify-content: space-between;
     align-items: center;
     gap: 16px;
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
     font-weight: 700;
     color: var(--color-text-primary);
+    line-height: 1.35;
 }
+
 .aboutFaqAnswer {
     max-height: 0;
     overflow: hidden;
     opacity: 0;
-    transition: max-height 0.1s ease-in-out,
-    opacity 0.25s ease;
+    transition: max-height 0.1s ease-in-out, opacity 0.25s ease;
 }
 
 .aboutFaqItem.open .aboutFaqAnswer {
-    max-height: 200px;
+    max-height: 260px;
     opacity: 1;
 }
 
@@ -162,25 +170,130 @@ justify-content: flex-start;
     margin: 14px 0 0;
     font-size: 0.9rem;
     line-height: 1.65;
-    font-weight: lighter;
+    font-weight: 300;
     color: var(--color-text-primary);
 }
 
-@media (max-width: 680px) {
+@media (max-width: 1024px) {
     .aboutPage {
-        padding: 32px 16px 60px;
-        gap: 40px;
+        width: min(100% - 2rem, 900px);
+    }
+
+    .aboutServiceDesc {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutPage {
+        width: 100%;
+        padding: 0 1rem;
+        margin: 2rem auto 4rem;
     }
 
     .aboutServices {
         grid-template-columns: 1fr;
     }
 
+    .aboutServiceCard {
+        border-radius: 16px;
+    }
+
+    .aboutFaqItem {
+        border-radius: 16px;
+    }
+
+    .aboutFaqQuestion {
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 520px) {
+    .aboutPage {
+        padding: 0 0.75rem;
+        margin-top: 1.25rem;
+    }
+
+    .aboutPage section {
+        margin-top: 32px;
+    }
+
+    .aboutIntro {
+        gap: 12px;
+    }
+
     .aboutTitle {
-        font-size: 1.5rem;
+        font-size: 1.65rem;
+    }
+
+    .aboutDescription {
+        font-size: 0.98rem;
+        line-height: 1.6;
+    }
+
+    .aboutServiceCard {
+        padding: 18px;
+        border-width: 2px;
+        border-radius: 14px;
+    }
+
+    .aboutServiceHeader {
+        gap: 12px;
+    }
+
+    .aboutServiceHeader img {
+        width: 2.3rem;
+    }
+
+    .aboutServiceTitle {
+        font-size: 1.15rem;
+    }
+
+    .aboutServiceDesc {
+        font-size: 0.88rem;
+        line-height: 1.6;
+    }
+
+    .aboutFeatureItem {
+        font-size: 0.86rem;
     }
 
     .aboutFaqTitle {
-        font-size: 1.35rem;
+        font-size: 1.25rem;
+        margin-bottom: 18px;
+    }
+
+    .aboutFaqItem {
+        padding: 14px;
+        border-width: 2px;
+        border-radius: 14px;
+    }
+
+    .aboutFaqQuestion {
+        gap: 12px;
+        font-size: 0.98rem;
+    }
+
+    .aboutFaqAnswer p {
+        font-size: 0.86rem;
+        line-height: 1.55;
+    }
+}
+
+@media (max-width: 380px) {
+    .aboutPage {
+        padding: 0 0.6rem;
+    }
+
+    .aboutTitle {
+        font-size: 1.45rem;
+    }
+
+    .aboutServiceHeader {
+        align-items: flex-start;
+    }
+
+    .aboutFaqQuestion {
+        font-size: 0.92rem;
     }
 }
