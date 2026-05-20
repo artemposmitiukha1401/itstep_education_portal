@@ -18,6 +18,7 @@ const NAV_ITEMS = [
 function SubjectsDropdown({ onSelect }) {
   const [open, setOpen] = useState(false);
   const ref = useRef(null);
+  const closeTimer = useRef(null);
 
   useEffect(() => {
     function handleClickOutside(event) {
@@ -26,9 +27,44 @@ function SubjectsDropdown({ onSelect }) {
       }
     }
 
+    function handleEscape(event) {
+      if (event.key === "Escape") {
+        setOpen(false);
+      }
+    }
+
     document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
+    document.addEventListener("keydown", handleEscape);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("keydown", handleEscape);
+
+      if (closeTimer.current) {
+        clearTimeout(closeTimer.current);
+      }
+    };
   }, []);
+
+  function openDropdown() {
+    if (closeTimer.current) {
+      clearTimeout(closeTimer.current);
+    }
+
+    setOpen(true);
+  }
+
+  function closeDropdown() {
+    closeTimer.current = setTimeout(() => {
+      setOpen(false);
+    }, 120);
+  }
+
+  function toggleDropdown(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    setOpen((value) => !value);
+  }
 
   function handleSelect() {
     setOpen(false);
@@ -36,19 +72,37 @@ function SubjectsDropdown({ onSelect }) {
   }
 
   return (
-    <div className="nav-dropdown" ref={ref}>
-      <button
-        type="button"
-        className={`nav-dropdown-trigger ${open ? "nav-dropdown-trigger--open" : ""}`}
-        onClick={() => setOpen((value) => !value)}
-        aria-expanded={open}
-      >
-        Предмети
-        <span className="nav-dropdown-chevron">{open ? "▲" : "▼"}</span>
-      </button>
+    <div
+      className="nav-dropdown"
+      ref={ref}
+      onMouseEnter={openDropdown}
+      onMouseLeave={closeDropdown}
+    >
+      <div className={`nav-dropdown-trigger ${open ? "nav-dropdown-trigger--open" : ""}`}>
+        <Link
+          to="/subjects-homepage"
+          className="nav-dropdown-main-link"
+          onClick={handleSelect}
+        >
+          Предмети
+        </Link>
+
+        <button
+          type="button"
+          className="nav-dropdown-chevron-button"
+          onClick={toggleDropdown}
+          aria-label={open ? "Закрити список предметів" : "Відкрити список предметів"}
+          aria-expanded={open}
+          aria-controls="subjects-dropdown-menu"
+        >
+          <span className="nav-dropdown-chevron" aria-hidden="true">
+            {open ? "▲" : "▼"}
+          </span>
+        </button>
+      </div>
 
       {open && (
-        <div className="nav-dropdown-menu">
+        <div className="nav-dropdown-menu" id="subjects-dropdown-menu">
           {SUBJECTS.map((subject) => (
             <Link
               key={subject.id}
@@ -76,8 +130,19 @@ export default function NavigationBar() {
       }
     }
 
+    function handleEscape(event) {
+      if (event.key === "Escape") {
+        setMobileOpen(false);
+      }
+    }
+
     document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
+    document.addEventListener("keydown", handleEscape);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("keydown", handleEscape);
+    };
   }, []);
 
   function closeMobileMenu() {
@@ -85,20 +150,24 @@ export default function NavigationBar() {
   }
 
   return (
-    <nav className="NavigationBar" ref={navRef}>
+    <nav className="NavigationBar" ref={navRef} aria-label="Головна навігація">
       <button
         type="button"
         className={`NavigationBar-burger ${mobileOpen ? "NavigationBar-burger--open" : ""}`}
         onClick={() => setMobileOpen((value) => !value)}
         aria-label={mobileOpen ? "Закрити меню" : "Відкрити меню"}
         aria-expanded={mobileOpen}
+        aria-controls="main-navigation-menu"
       >
         <span></span>
         <span></span>
         <span></span>
       </button>
 
-      <div className={`NavigationBar-menu ${mobileOpen ? "NavigationBar-menu--open" : ""}`}>
+      <div
+        className={`NavigationBar-menu ${mobileOpen ? "NavigationBar-menu--open" : ""}`}
+        id="main-navigation-menu"
+      >
         {NAV_ITEMS.map((item) => (
           <NavLink
             key={item.link}

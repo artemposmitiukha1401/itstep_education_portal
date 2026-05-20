@@ -3,9 +3,9 @@ import "./Footer.css";
 
 const NAVIGATION = [
   { label: "Про нас", href: "/about" },
-  { label: "Тренувальні тести", href: "/tests" },
-  { label: "Курси", href: "/courses" },
-  { label: "FAQ", href: "/faq" },
+  { label: "Вибір предметів", href: "/home" },
+  { label: "Результати", href: "/history" },
+  { label: "FAQ", href: "/about" },
 ];
 
 const SOCIALS = [
@@ -22,10 +22,9 @@ export default function Footer() {
     <footer className="footer">
       <div className="footerInner">
         <div className="footerBrand">
-          <div className="footerLogo">
-            <img src="/logo_light.svg" alt="Треш НМТ" />
-          </div>
-
+          <Link className="footerLogo" to="/home">
+          <img src="/logo_light.svg" alt="Треш НМТ" /></Link>
+        
           <p className="footerBrandName">Треш НМТ</p>
 
           <p className="footerTagline">

@@ -1,7 +1,7 @@
 @import url("../Root/Root.css");
 
 .resultsPage {
-    min-height: max-content;
+    min-height: 100vh;
     width: min(100% - 2rem, 1224px);
     max-width: 1224px;
     margin: clamp(1.5rem, 4vw, 3rem) auto;

@@ -119,6 +119,7 @@ function handleDelete(id) {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(updated));
 }
 
+
 function handleClearAll() {
     if (!window.confirm("Видалити всю історію результатів?")) return;
 

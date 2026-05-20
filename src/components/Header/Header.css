@@ -1,45 +1,117 @@
 @import url("../Root/Root.css");
 
+.Header,
+.Header *,
+.Header *::before,
+.Header *::after {
+  box-sizing: border-box;
+}
+
 .Header {
+  --header-menu-top: 92px;
   width: 100%;
-  min-height: 6rem;
-  padding: 1.5rem clamp(1rem, 4vw, 2rem);
+  min-height: clamp(4.75rem, 8vw, 6rem);
+  padding: clamp(0.85rem, 2vw, 1.5rem) clamp(0.875rem, 4vw, 2rem);
   background-color: var(--color-surface);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1.5rem;
+  gap: clamp(0.5rem, 2vw, 1.5rem);
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
+}
+
+.Header-logoLink {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+  min-width: 0;
+  text-decoration: none;
 }
 
 .Header img {
-  width: clamp(7rem, 16vw, 10rem);
+  width: clamp(6.5rem, 12vw, 10rem);
+  max-width: 100%;
   height: auto;
   display: block;
   flex-shrink: 0;
 }
 
-@media (max-width: 768px) {
+.Header .NavigationBar {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.Header .HeaderLogin {
+  flex: 0 0 auto;
+}
+
+@media (max-width: 1180px) {
   .Header {
-    min-height: auto;
-    padding: 1rem;
-    gap: 1rem;
+    --header-menu-top: 84px;
+    gap: 0.75rem;
   }
 
   .Header img {
-    width: 7.5rem;
+    width: clamp(6.5rem, 11vw, 8.5rem);
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 1024px) {
   .Header {
+    min-height: 5rem;
+    padding: 1rem;
+  }
+
+  .Header .NavigationBar {
+    flex: 0 0 auto;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .Header {
+    --header-menu-top: 132px;
     flex-wrap: wrap;
     align-items: center;
+    row-gap: 0.65rem;
+    column-gap: 0.75rem;
+    padding: 0.85rem;
+  }
+
+  .Header-logoLink {
+    order: 1;
+  }
+
+  .Header .NavigationBar {
+    order: 2;
+    margin-left: auto;
+  }
+
+  .Header .HeaderLogin {
+    order: 3;
+    width: 100%;
+    flex: 0 0 100%;
   }
 
   .Header img {
     width: 7rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .Header {
+    padding: 0.75rem;
+  }
+
+  .Header img {
+    width: 6.5rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .Header {
+    --header-menu-top: 184px;
   }
 }

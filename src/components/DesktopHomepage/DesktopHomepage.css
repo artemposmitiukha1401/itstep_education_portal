@@ -1,0 +1,273 @@
+@import url("../Root/Root.css");
+
+.DesktopHomepage,
+.DesktopHomepage *,
+.DesktopHomepage *::before,
+.DesktopHomepage *::after {
+  box-sizing: border-box;
+}
+
+.DesktopHomepage {
+  width: min(100% - 3rem, 1224px);
+  min-height: calc(100dvh - 96px);
+  margin: 0 auto;
+  padding: clamp(2.5rem, 5vw, 5rem) 0;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2rem, 4vw, 3.5rem);
+}
+
+.DesktopHomepageHero {
+  max-width: 780px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.9rem;
+}
+
+.DesktopHomepageLabel {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45rem 0.8rem;
+  border: 2px solid var(--color-border);
+  border-radius: 999px;
+  background-color: var(--color-accent-light);
+  color: var(--color-text-primary);
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.DesktopHomepageTitle {
+  margin: 0;
+  color: var(--color-text-primary);
+  font-size: var(--text-title);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.DesktopHomepageDescription {
+  max-width: 680px;
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: var(--text-base);
+  font-weight: 400;
+  line-height: 1.55;
+}
+
+.DesktopHomepageGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(1rem, 1.6vw, 1.5rem);
+}
+
+.DesktopHomepageCard {
+  min-height: 260px;
+  padding: clamp(1.35rem, 2vw, 1.75rem);
+  border: 3px solid var(--color-border);
+  border-radius: 24px;
+  background-color: #fff;
+  color: var(--color-text-primary);
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  box-shadow: var(--shadow-sm, 0 8px 20px rgba(15, 23, 42, 0.06));
+  transition:
+    background-color 0.25s ease,
+    transform 0.2s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.DesktopHomepageCard:hover {
+  background-color: #e0f2fe;
+  color: var(--color-text-primary);
+  border-color: var(--color-border);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md, 0 14px 30px rgba(15, 23, 42, 0.1));
+}
+
+.DesktopHomepageCard:focus-visible {
+  outline: 4px solid #bae6fd;
+  outline-offset: 4px;
+}
+
+.DesktopHomepageIcon {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-color: var(--color-accent-light);
+  color: var(--color-text-primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.DesktopHomepageIcon svg {
+  width: 42px;
+  height: 42px;
+}
+
+.DesktopHomepageCardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.DesktopHomepageCardTitle {
+  color: var(--color-text-primary);
+  font-size: var(--text-semititle);
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.DesktopHomepageCardCount {
+  color: var(--color-text-secondary);
+  font-size: clamp(1rem, 1.1vw, 1.15rem);
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+@media (max-width: 1100px) {
+  .DesktopHomepage {
+    width: min(100% - 2rem, 900px);
+    padding: clamp(2rem, 4vw, 3.5rem) 0;
+  }
+
+  .DesktopHomepageGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .DesktopHomepageCard {
+    min-height: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .DesktopHomepage {
+    width: 100%;
+    min-height: calc(100dvh - 132px);
+    padding: 1.25rem;
+    gap: 1.75rem;
+  }
+
+  .DesktopHomepageHero {
+    gap: 0.75rem;
+  }
+
+  .DesktopHomepageLabel {
+    font-size: 0.85rem;
+  }
+
+  .DesktopHomepageTitle {
+    font-size: clamp(1.9rem, 8vw, 3rem);
+  }
+
+  .DesktopHomepageDescription {
+    font-size: 1rem;
+  }
+
+  .DesktopHomepageGrid {
+    gap: 1rem;
+  }
+
+  .DesktopHomepageCard {
+    min-height: 170px;
+    padding: 1.15rem;
+    border-radius: 18px;
+  }
+
+  .DesktopHomepageIcon {
+    width: 56px;
+    height: 56px;
+  }
+
+  .DesktopHomepageIcon svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .DesktopHomepageCardTitle {
+    font-size: 1.2rem;
+  }
+
+  .DesktopHomepageCardCount {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .DesktopHomepage {
+    padding: 0.9rem;
+  }
+
+  .DesktopHomepageGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.85rem;
+  }
+
+  .DesktopHomepageCard {
+    min-height: 145px;
+    padding: 0.9rem;
+    border-width: 2px;
+    border-radius: 15px;
+    gap: 1.25rem;
+  }
+
+  .DesktopHomepageIcon {
+    width: 46px;
+    height: 46px;
+  }
+
+  .DesktopHomepageIcon svg {
+    width: 27px;
+    height: 27px;
+  }
+
+  .DesktopHomepageCardTitle {
+    font-size: 1rem;
+  }
+
+  .DesktopHomepageCardCount {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 340px) {
+  .DesktopHomepage {
+    padding: 0.7rem;
+  }
+
+  .DesktopHomepageGrid {
+    gap: 0.7rem;
+  }
+
+  .DesktopHomepageCard {
+    min-height: 130px;
+    padding: 0.75rem;
+    border-radius: 12px;
+  }
+
+  .DesktopHomepageIcon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .DesktopHomepageIcon svg {
+    width: 23px;
+    height: 23px;
+  }
+
+  .DesktopHomepageCardTitle {
+    font-size: 0.9rem;
+  }
+
+  .DesktopHomepageCardCount {
+    font-size: 0.8rem;
+  }
+}

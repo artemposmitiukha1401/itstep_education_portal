@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import subjectsData from "../../data/theory_topics.json";
-import "./MobileHomepage.css";
+import "./DesktopHomepage.css";
 
 const SUBJECT_ORDER = [1, 3, 2, 4];
 
@@ -17,48 +17,62 @@ function formatTopicsCount(count) {
   const lastDigit = count % 10;
   const lastTwoDigits = count % 100;
 
-  if (lastDigit >= 2 && lastDigit <= 4 && !(lastTwoDigits >= 12 && lastTwoDigits <= 14)) {
+  if (
+    lastDigit >= 2 &&
+    lastDigit <= 4 &&
+    !(lastTwoDigits >= 12 && lastTwoDigits <= 14)
+  ) {
     return `${count} теми`;
   }
 
   return `${count} тем`;
 }
 
-function getSubjects() {
-  return SUBJECT_ORDER
-    .map((id) => subjectsData.find((subject) => Number(subject.id) === id))
-    .filter(Boolean)
-    .map((subject) => ({
-      id: subject.id,
-      title: subject.subject_name,
-      topicsCount: subject.topics?.length ?? 0,
-      icon: SUBJECT_ICONS[subject.id],
-    }));
-}
+const subjects = SUBJECT_ORDER
+  .map((id) => subjectsData.find((subject) => Number(subject.id) === id))
+  .filter(Boolean)
+  .map((subject) => ({
+    id: subject.id,
+    title: subject.subject_name,
+    topicsCount: subject.topics?.length ?? 0,
+    icon: SUBJECT_ICONS[subject.id],
+  }));
 
-export default function MobileHomepage() {
-  const subjects = getSubjects();
-
+export default function DesktopHomepage() {
   return (
-    <main className="MobileHomepage">
-      <h5>Оберіть предмет для підготовки до НМТ. Пройдіть пробні та тренувальні тести у форматі реального іспиту.</h5>
-      <section className="MobileHomepageGrid">
+    <main className="DesktopHomepage">
+      <section className="DesktopHomepageHero">
+        <span className="DesktopHomepageLabel">Підготовка до НМТ</span>
+
+        <h1 className="DesktopHomepageTitle">
+          Оберіть предмет для підготовки
+        </h1>
+
+        <p className="DesktopHomepageDescription">
+          Проходьте пробні та тренувальні тести у форматі реального іспиту,
+          повторюйте теорію та відстежуйте свій прогрес.
+        </p>
+      </section>
+
+      <section className="DesktopHomepageGrid" aria-label="Список предметів">
         {subjects.map((subject) => (
           <Link
             key={subject.id}
             to={`/subject/${subject.id}`}
-            className="MobileHomepageCard"
+            className="DesktopHomepageCard"
           >
-            <span className="MobileHomepageIcon">
+            <span className="DesktopHomepageIcon">
               <SubjectIcon name={subject.icon} />
             </span>
 
-            <span className="MobileHomepageCardTitle">
-              {subject.title}
-            </span>
+            <span className="DesktopHomepageCardContent">
+              <span className="DesktopHomepageCardTitle">
+                {subject.title}
+              </span>
 
-            <span className="MobileHomepageCardCount">
-              {formatTopicsCount(subject.topicsCount)}
+              <span className="DesktopHomepageCardCount">
+                {formatTopicsCount(subject.topicsCount)}
+              </span>
             </span>
           </Link>
         ))}

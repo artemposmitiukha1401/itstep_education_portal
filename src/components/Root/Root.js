@@ -4,11 +4,13 @@ import SubjectMap from "../SubjectNetwork/SubjectMap";
 import MobileHomepage from "../MobileHomepage/MobileHomepage";
 import "./Root.css";
 import Header from "../Header/Header";
+
 import QuizPage from "../QuizPage/QuizPage";
 import QuizHistory from "../ResultsHistory/ResultsHistory";
 import TopicList from "../TopicList/TopicList";
 import Footer from "../Footer/Footer";
 import AboutPage from "../AboutPage/AboutPage";
+import DesktopHomepage from "../DesktopHomepage/DesktopHomepage"
 import LoginModalWindow from "../LoginModalWindow/LoginModalWindow";
 import RegisterModalWindow from "../RegisterModalWindow/RegisterModalWindow";
 import { AuthModalProvider } from "../AuthModalContext/AuthModalContext";
@@ -37,11 +39,21 @@ function useMediaQuery(query) {
   return matches;
 }
 
+function SubjectsHomepageRoute() {
+  const isPhone = useMediaQuery("(max-width: 768px)");
+
+  if (isPhone) {
+    return <Navigate to="/home" replace />;
+  }
+
+  return <DesktopHomepage />;
+} 
 function HomePage() {
   const isPhone = useMediaQuery("(max-width: 768px)");
 
   return isPhone ? <MobileHomepage /> : <SubjectMap />;
 }
+
 
 function RootInner() {
   const [authModal, setAuthModal] = useState(null);
@@ -59,15 +71,16 @@ function RootInner() {
         <Header />
 
         <Routes>
-          <Route path="/history" element={<QuizHistory />} />
-          <Route path="/" element={<Navigate to="/home" replace />} />
-          <Route path="/home" element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/subject/:subjectId" element={<TopicList />} />
-          <Route path="/subject/:subjectId/topic/:topicId/quiz" element={<QuizPage />} />
-        </Routes>
+  <Route path="/history" element={<QuizHistory />} />
+  <Route path="/" element={<Navigate to="/home" replace />} />
+  <Route path="/home" element={<HomePage />} />
+  <Route path="/about" element={<AboutPage />} />
+  <Route path="/subject/:subjectId" element={<TopicList />} />
+  <Route path="/subject/:subjectId/topic/:topicId/quiz" element={<QuizPage />} />
+  <Route path="/subjects-homepage" element={<SubjectsHomepageRoute />} />
+</Routes>
 
-        <Outlet />
+
         <Footer />
 
         {authModal === "login" && (
