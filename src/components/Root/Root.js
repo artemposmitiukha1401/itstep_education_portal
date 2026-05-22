@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Routes, Route, Navigate, Outlet } from "react-router-dom";
+import { Routes, Route, Navigate} from "react-router-dom";
 import SubjectMap from "../SubjectNetwork/SubjectMap";
 import MobileHomepage from "../MobileHomepage/MobileHomepage";
 import "./Root.css";

@@ -1,5 +1,5 @@
 import { useParams, useNavigate, Link } from "react-router-dom";
-import { useState, useCallback, useRef, useMemo, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import { questionsBySubject } from "../../data";
 import MultipleChoice from "../MultipleChoice/MultipleChoice";
 import MatchPairs from "../MatchPairs/MatchPairs";
@@ -174,6 +174,7 @@ function validateMatchQuestion(question) {
   const leftIds = new Set(
     question.leftOptions.map((option) => normalizeId(option.id)),
   );
+
   const rightIds = new Set(
     question.rightOptions.map((option) => normalizeId(option.id)),
   );
@@ -325,7 +326,8 @@ function normalizeManualQuestion(question) {
 function normalizeQuestion(question) {
   validateQuestion(question);
 
-  const base = {
+  const preparedQuestion = {
+    ...question,
     id: normalizeId(question.id),
     subjectId: question.subjectId ?? null,
     topicId: question.topicId,
@@ -336,19 +338,14 @@ function normalizeQuestion(question) {
     explanation: question.explanation ?? null,
   };
 
-  const preparedQuestion = {
-    ...question,
-    ...base,
-  };
-
   if (
-    question.type === "single-choice" ||
-    question.type === "multiple-choice"
+    preparedQuestion.type === "single-choice" ||
+    preparedQuestion.type === "multiple-choice"
   ) {
     return normalizeChoiceQuestion(preparedQuestion);
   }
 
-  if (question.type === "match") {
+  if (preparedQuestion.type === "match") {
     return normalizeMatchQuestion(preparedQuestion);
   }
 
@@ -356,7 +353,7 @@ function normalizeQuestion(question) {
 }
 
 function buildComponentProps(question, index) {
-  const base = {
+  const baseProps = {
     num: index + 1,
     question: question.question,
     image: question.imageUrl,
@@ -369,7 +366,7 @@ function buildComponentProps(question, index) {
     question.type === "multiple-choice"
   ) {
     return {
-      ...base,
+      ...baseProps,
       options: question.options,
       correctOptionIds: question.correctOptionIds,
       selectionMode: question.selectionMode,
@@ -378,7 +375,7 @@ function buildComponentProps(question, index) {
 
   if (question.type === "match") {
     return {
-      ...base,
+      ...baseProps,
       leftOptions: question.leftOptions,
       rightOptions: question.rightOptions,
       correctPairs: question.correctPairs,
@@ -389,7 +386,7 @@ function buildComponentProps(question, index) {
   }
 
   return {
-    ...base,
+    ...baseProps,
     answer: question.answer,
     correctAnswers: question.correctAnswers,
   };
@@ -397,28 +394,31 @@ function buildComponentProps(question, index) {
 
 function getQuestionsForSubject(subjectId) {
   const subjectKey = SUBJECT_KEY[subjectId] ?? subjectId;
+
   return questionsBySubject[subjectKey] ?? questionsBySubject[subjectId] ?? [];
+}
+
+function getQuestionsForTopic(subjectId, topicId) {
+  const rawQuestions = getQuestionsForSubject(subjectId);
+
+  return rawQuestions
+    .filter((question) => String(question.topicId) === String(topicId))
+    .map(normalizeQuestion);
 }
 
 export default function QuizPage() {
   const { subjectId, topicId } = useParams();
   const navigate = useNavigate();
 
-  const rawQuestionsData = getQuestionsForSubject(subjectId);
-
-  const questions = useMemo(() => {
-    return rawQuestionsData
-      .filter((question) => String(question.topicId) === String(topicId))
-      .map(normalizeQuestion);
-  }, [rawQuestionsData, topicId]);
+  const questions = getQuestionsForTopic(subjectId, topicId);
 
   const [current, setCurrent] = useState(0);
   const [answers, setAnswers] = useState({});
   const [showResult, setShowResult] = useState(false);
-  const savedRef = useRef(false);
-
   const [slideClass, setSlideClass] = useState("");
   const [animKey, setAnimKey] = useState(0);
+
+  const savedRef = useRef(false);
 
   useEffect(() => {
     setCurrent(0);
@@ -429,15 +429,12 @@ export default function QuizPage() {
     savedRef.current = false;
   }, [subjectId, topicId]);
 
-  const handleAnswer = useCallback((index, correct) => {
-    setAnswers((prev) => ({
-      ...prev,
+  function handleAnswer(index, correct) {
+    setAnswers((previousAnswers) => ({
+      ...previousAnswers,
       [index]: Boolean(correct),
     }));
-  }, []);
-
-  const answered = Object.keys(answers).length;
-  const correct = Object.values(answers).filter(Boolean).length;
+  }
 
   function goTo(nextIndex, direction) {
     if (
@@ -476,6 +473,17 @@ export default function QuizPage() {
     setShowResult(true);
   }
 
+  function getDotClassName(index) {
+    if (index === current) return "progressDot dotActive";
+    if (answers[index] === true) return "progressDot dotCorrect";
+    if (answers[index] === false) return "progressDot dotWrong";
+
+    return "progressDot";
+  }
+
+  const answered = Object.keys(answers).length;
+  const correct = Object.values(answers).filter(Boolean).length;
+
   if (questions.length === 0) {
     return (
       <div className="quizPage">
@@ -507,12 +515,12 @@ export default function QuizPage() {
   }
 
   if (showResult) {
-    const pct = Math.round((correct / questions.length) * 100);
+    const percent = Math.round((correct / questions.length) * 100);
 
     return (
       <div className="quizPage">
         <div className="quizResult">
-          <div className="resultScore">{pct}%</div>
+          <div className="resultScore">{percent}%</div>
 
           <div className="resultLabel">
             Правильно {correct} із {questions.length} питань
@@ -563,19 +571,8 @@ export default function QuizPage() {
     );
   }
 
-  const q = questions[current];
-  const props = buildComponentProps(q, current);
-
-  const onAnswer = (isCorrect) => {
-    handleAnswer(current, isCorrect);
-  };
-
-  const dotStatus = (index) => {
-    if (index === current) return "progressDot dotActive";
-    if (answers[index] === true) return "progressDot dotCorrect";
-    if (answers[index] === false) return "progressDot dotWrong";
-    return "progressDot";
-  };
+  const question = questions[current];
+  const componentProps = buildComponentProps(question, current);
 
   return (
     <div className="quizPage">
@@ -603,10 +600,10 @@ export default function QuizPage() {
         <div className="progressLabel">Питання</div>
 
         <div className="progressDots">
-          {questions.map((question, index) => (
+          {questions.map((questionItem, index) => (
             <button
-              key={question.id}
-              className={dotStatus(index)}
+              key={questionItem.id}
+              className={getDotClassName(index)}
               onClick={() => goTo(index, index > current ? "next" : "prev")}
             >
               {index + 1}
@@ -617,27 +614,28 @@ export default function QuizPage() {
 
       <div className="quizBody">
         <div key={animKey} className={`quizSlide ${slideClass}`}>
-          {(q.type === "single-choice" || q.type === "multiple-choice") && (
+          {(question.type === "single-choice" ||
+            question.type === "multiple-choice") && (
             <MultipleChoice
-              key={`${q.id}-${current}`}
-              {...props}
-              onAnswer={onAnswer}
+              key={`${question.id}-${current}`}
+              {...componentProps}
+              onAnswer={(isCorrect) => handleAnswer(current, isCorrect)}
             />
           )}
 
-          {q.type === "match" && (
+          {question.type === "match" && (
             <MatchPairs
-              key={`${q.id}-${current}`}
-              {...props}
-              onAnswer={onAnswer}
+              key={`${question.id}-${current}`}
+              {...componentProps}
+              onAnswer={(isCorrect) => handleAnswer(current, isCorrect)}
             />
           )}
 
-          {q.type === "manual" && (
+          {question.type === "manual" && (
             <ManualInput
-              key={`${q.id}-${current}`}
-              {...props}
-              onAnswer={onAnswer}
+              key={`${question.id}-${current}`}
+              {...componentProps}
+              onAnswer={(isCorrect) => handleAnswer(current, isCorrect)}
             />
           )}
         </div>

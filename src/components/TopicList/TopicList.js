@@ -45,7 +45,6 @@ export default function TopicList() {
       (s) => s.topicId === topicId && s.subtopicId === subtopicId,
     );
     if (activeSubtopic === null) {
-      // first open — no animation
       setSlideDir(null);
       setAnimKey((k) => k + 1);
       setActiveSubtopic({ topicId, subtopicId });
@@ -66,7 +65,6 @@ export default function TopicList() {
 
   return (
     <div className={`TopicList-layout ${activeSubtopic ? "split" : ""}`}>
-      {/* Левая панель */}
       <div className="TopicList-sidebar">
         <Link to="/home" className="back-btn">
           <span className="btn-text">Предмети</span>
