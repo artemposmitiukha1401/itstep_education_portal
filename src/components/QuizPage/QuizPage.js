@@ -32,7 +32,7 @@ function safeParseJson(value, fallback) {
     return value ? JSON.parse(value) : fallback;
   } catch {
     return fallback;
-  }
+  } 
 }
 
 function saveResult({ subjectId, topicId, correct, total }) {
